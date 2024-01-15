@@ -7,6 +7,28 @@
     flex-direction: row;
 }
 
+#headerTitle {
+    font-size: 24px;
+}
+
+#logo {
+    width: 14px;
+}
+
+.logo-container {
+    width: 63px;
+    background-color: red;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .logo-section {
     display: flex;
     justify-content: left;
