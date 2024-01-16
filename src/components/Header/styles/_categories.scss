@@ -16,30 +16,36 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 53px;
+    cursor: pointer;
     &:hover{
         transition: ease-in-out 0.1s;
     }
 }
-#category1:hover {
+
+.active {
+    background-color: #299EC3;
+}
+
+#category1:hover:not(.active) {
     border-bottom: 4px solid $color-category-1;
 }
 
-#category2:hover {
+#category2:hover:not(.active) {
     border-bottom: 4px solid $color-category-2;
 }
 
-#category3:hover {
+#category3:hover:not(.active) {
     border-bottom: 4px solid $color-category-3;
 }
 
-#category4:hover {
+#category4:hover:not(.active) {
     border-bottom: 4px solid $color-category-4;
 }
 
-#category5:hover {
+#category5:hover:not(.active) {
     border-bottom: 4px solid $color-category-5;
 }
 
-#category6:hover {
+#category6:hover:not(.active) {
     border-bottom: 4px solid $color-category-6;
 }
