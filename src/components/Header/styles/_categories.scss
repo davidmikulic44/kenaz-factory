@@ -1,0 +1,45 @@
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+
+.secondary {
+    background-color: $color-header-secondary;
+}
+
+.category-nav-item {
+    font-family: $font-secondary;
+    font-size: 18px;
+    padding: 15px 21px 16px 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-font-primary;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 53px;
+    &:hover{
+        transition: ease-in-out 0.1s;
+    }
+}
+#category1:hover {
+    border-bottom: 4px solid $color-category-1;
+}
+
+#category2:hover {
+    border-bottom: 4px solid $color-category-2;
+}
+
+#category3:hover {
+    border-bottom: 4px solid $color-category-3;
+}
+
+#category4:hover {
+    border-bottom: 4px solid $color-category-4;
+}
+
+#category5:hover {
+    border-bottom: 4px solid $color-category-5;
+}
+
+#category6:hover {
+    border-bottom: 4px solid $color-category-6;
+}

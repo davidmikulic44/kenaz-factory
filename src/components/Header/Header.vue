@@ -3,26 +3,24 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="header-container-big primary">
         <header class="header-container">
-        <div class="logo-section">
-            <div class="logo-container">
-                <img id="logo" src="@/assets/Shape 2.svg" alt="">
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img id="logo" src="@/assets/Shape 2.svg" alt="">
+                </div>
+                <h1 id="headerTitle">Kenaz</h1>
             </div>
-            <h1 id="headerTitle">Kenaz</h1>
-        </div>
-
-
-        <div class="navigation-section">
-            <nav id="mainNavigation">
-                <h3 class="main-nav-item">Media</h3>
-                <h3 class="main-nav-item">Marketing</h3>
-                <h3 class="main-nav-item">Contact</h3>
-            </nav>
-            <div class="logo-container">
-                <img src="@/assets/search 1.svg" alt="Search" id="searchIcon">
+            <div class="navigation-section">
+                <ul class="main-navigation">
+                    <li class="main-nav-item"><a>Media</a></li>
+                    <li class="main-nav-item"><a>Marketing</a></li>
+                    <li class="main-nav-item"><a>Contact</a></li>
+                </ul>
+                <div class="logo-container">
+                    <img src="@/assets/search 1.svg" alt="Search" id="searchIcon">
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
     </div>
 </template>
