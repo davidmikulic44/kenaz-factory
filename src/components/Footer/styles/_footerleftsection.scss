@@ -1,0 +1,33 @@
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+
+.footer-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    gap: 23px;
+    
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+#footerTitle {
+    font-family: $font-secondary;
+    color: $color-font-secondary;
+    font-weight: 400;
+    font-size: 29.623px; 
+}
+
+#footerLogo {
+    width: 28px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 84px;
+}

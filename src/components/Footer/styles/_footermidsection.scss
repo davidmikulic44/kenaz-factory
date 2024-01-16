@@ -1,0 +1,27 @@
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+
+.subscription-input {
+    all: unset;
+    width: 151px;
+    height: 23px;
+    background-color: $color-input;
+    color: $color-font-primary;
+    font-family: $font-primary;
+    padding: 15px 21px;
+
+    &::placeholder {
+        color: $color-placeholder-text;
+    }
+}
+
+.subscription-submit {
+    width: 109px;
+    height: 53px;
+    border: none;
+    background-color: $color-header-secondary;
+    font-family: $font-primary;
+    font-size: 16px;
+    color: $color-title-footer;
+    cursor: pointer;
+}
