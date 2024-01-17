@@ -71,3 +71,11 @@
     color: $color-title-footer;
     
 }
+
+.footer-section-container {
+    display: flex;
+    flex-direction: column;
+    width: 302px;
+    gap: 23px;
+    
+}

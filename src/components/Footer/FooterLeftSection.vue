@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section class="footer-left-container">
+    <section class="footer-section-container">
         <div class="title-container">
             <img src="../../assets/Vector Smart Object.svg" id="footerLogo">
             <h1 id="footerTitle">Kenaz</h1>

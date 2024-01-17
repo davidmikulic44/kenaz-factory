@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section class="footer-left-container">
+    <section class="footer-section-container">
         <div class="title-container">
             <h1 class="footer-title-dim">Newsletter</h1>
         </div>
