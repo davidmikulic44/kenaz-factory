@@ -1,5 +1,6 @@
 <template>
-    <article class="footer-posts">
+    <section class="footer-posts">
+        <h1 class="footer-posts-title">Featured</h1>
             <article class="footer-single-post">
                 <div class="footer-post-desc">
                     <div class="footer-post-header">
@@ -41,6 +42,5 @@
                     <img src="../../assets/manofsteel.jpeg" class="footer-post-image" alt="">
                 </div>
             </article>
-            
-        </article>
+        </section>
 </template>

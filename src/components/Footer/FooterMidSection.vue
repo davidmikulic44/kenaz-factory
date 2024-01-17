@@ -1,7 +1,6 @@
 <script setup>
     import './styles/_footermidsection.scss'
     import './styles/_footer.scss'
-    import FooterPosts from './FooterPosts.vue'
 </script>
 
 <template>
@@ -14,7 +13,6 @@
             <input class="subscription-input" type="email" placeholder="Your email">
             <input class="subscription-submit" type="submit" value="Subscribe">
         </form>
-        <h1 class="footer-posts-title">Random posts</h1>
-        <FooterPosts></FooterPosts>
+        
     </section>
 </template>

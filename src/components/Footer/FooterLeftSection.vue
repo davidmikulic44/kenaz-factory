@@ -1,7 +1,6 @@
 <script setup>
     import './styles/_footerleftsection.scss'
     import './styles/_footer.scss'
-    import FooterPosts from './FooterPosts.vue'
 </script>
 
 <template>
@@ -20,8 +19,6 @@
             <img src="../../assets/You tube.svg" alt="">
             <img src="../../assets/Skype.svg" alt="">
         </div>
-        <h1 class="footer-posts-title">Featured</h1>
-        <FooterPosts></FooterPosts>
         
         
         

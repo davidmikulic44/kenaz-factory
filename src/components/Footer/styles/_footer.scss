@@ -14,10 +14,23 @@
 .footer-primary {
     width: 940px;
     display: flex;
+    flex-direction: column;
     gap: 17px;
     padding-top: 50px;
     padding-bottom: 222px;
     align-self: center;
+}
+
+.footer-row1 {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 64px;
+}
+
+.footer-row2 {
+    display: flex;
+    gap: 20px;
+    
 }
 
 .footer-text {

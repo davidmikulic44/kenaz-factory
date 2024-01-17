@@ -1,0 +1,29 @@
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+
+.footer-tweets {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-header {
+    display: flex;
+    gap: 5px;
+}
+
+.tweet-author {
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $color-font-footer;
+}
+
+.tweet-content {
+    color: $color-title-footer;
+    font-family: $font-primary;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
