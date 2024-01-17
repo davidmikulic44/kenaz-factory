@@ -1,5 +1,5 @@
 <script setup>
-    import './styles/_footermidsection.scss'
+    import './styles/_footerNewsletter.scss'
     import './styles/_footer.scss'
 </script>
 

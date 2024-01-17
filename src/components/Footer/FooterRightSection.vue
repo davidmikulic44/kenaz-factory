@@ -7,9 +7,7 @@
 
 <template>
     <section class="footer-section-container">
-        <div class="title-container">
-            <h1 class="footer-title-dim">Tags Widget</h1>
-        </div>
+        
         <FooterTagsWidget></FooterTagsWidget>
         
     </section>

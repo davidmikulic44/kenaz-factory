@@ -1,8 +1,8 @@
 <script setup>
     import './styles/_footer.scss'
-    import FooterLeftSection from './FooterLeftSection.vue';
-    import FooterMidSection from './FooterMidSection.vue';
-    import FooterRightSection from './FooterRightSection.vue';
+    import FooterSocial from './FooterSocial.vue';
+    import FooterNewsletter from './FooterNewsletter.vue';
+    import FooterTagsWidget from './FooterTagsWidget.vue';
     import FooterSiteInfo from './FooterSiteInfo.vue';
     import FooterFeaturedPosts from './FooterFeaturedPosts.vue';
     import FooterRandomPosts from './FooterRandomPosts.vue';
@@ -13,9 +13,9 @@
     <footer class="footer-container-big">
         <div class="footer-primary">
             <div class="footer-row1">
-                <FooterLeftSection></FooterLeftSection>
-                <FooterMidSection></FooterMidSection>
-                <FooterRightSection></FooterRightSection>
+                <FooterSocial></FooterSocial>
+                <FooterNewsletter></FooterNewsletter>
+                <FooterTagsWidget></FooterTagsWidget>
             </div>
             <div class="footer-row2">
                 <FooterFeaturedPosts></FooterFeaturedPosts>

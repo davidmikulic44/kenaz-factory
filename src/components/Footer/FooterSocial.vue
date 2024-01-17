@@ -1,5 +1,5 @@
 <script setup>
-    import './styles/_footerleftsection.scss'
+    import './styles/_footerSocial.scss'
     import './styles/_footer.scss'
 </script>
 
