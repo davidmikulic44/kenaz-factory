@@ -14,6 +14,7 @@
     font-size: 24px;
     font-family: $font-secondary;
     color: $color-font-primary;
+    text-decoration: none;
 }
 
 #logo {
@@ -71,6 +72,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
+}
+
+.main-nav-link {
+    text-decoration: none;
+    color: $color-font-primary;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 #searchIcon {

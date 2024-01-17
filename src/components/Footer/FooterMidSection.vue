@@ -10,7 +10,7 @@
             <h1 class="footer-title-dim">Newsletter</h1>
         </div>
         <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo ante.</p>
-        <form>
+        <form class="subscription-container" method="" action="">
             <input class="subscription-input" type="email" placeholder="Your email">
             <input class="subscription-submit" type="submit" value="Subscribe">
         </form>

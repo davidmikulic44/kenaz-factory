@@ -24,4 +24,17 @@
     font-size: 16px;
     color: $color-title-footer;
     cursor: pointer;
+    transition: all ease-in-out 0.1s;
+
+    &:hover {
+        background-color: lighten($color-header-secondary, 10);
+    }
+
+    &:active {
+        background-color: darken($color-header-secondary, 5);
+    }
+}
+
+.subscription-container {
+    margin-bottom: 69px;
 }

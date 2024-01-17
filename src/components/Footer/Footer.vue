@@ -3,15 +3,20 @@
     import FooterLeftSection from './FooterLeftSection.vue';
     import FooterMidSection from './FooterMidSection.vue';
     import FooterRightSection from './FooterRightSection.vue';
+    import FooterSiteInfo from './FooterSiteInfo.vue';
 </script>
 
 <template>
-    <div class="footer-container-big">
-        <footer class="footer-container">
+    <footer class="footer-container-big">
+        <div class="footer-primary">
             <FooterLeftSection></FooterLeftSection>
             <FooterMidSection></FooterMidSection>
             <FooterRightSection></FooterRightSection>
-        </footer>
-    </div>
-
+        </div>
+        <img src="../../assets/BigLine.svg">
+        <div class="footer-secondary">
+            <FooterSiteInfo></FooterSiteInfo>
+        </div>
+    </footer>
+    
 </template>

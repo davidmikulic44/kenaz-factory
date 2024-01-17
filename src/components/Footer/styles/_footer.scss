@@ -6,16 +6,18 @@
     background-color: $color-header;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     border-top: 23px solid $color-header-secondary;
     margin-top: 20px;
 }
 
-.footer-container {
+.footer-primary {
     width: 940px;
     display: flex;
     gap: 17px;
     padding-top: 50px;
     padding-bottom: 222px;
+    align-self: center;
 }
 
 .footer-text {
@@ -26,6 +28,7 @@
 .footer-title-dim {
     font-family: $font-secondary;
     color: $color-title-footer;
+    margin-bottom: 14px;
 }
 
 .footer-posts-title {
@@ -46,7 +49,7 @@
     display: flex;
     gap: 30px;
     height: 94px;
-    border-bottom: 1px solid $color-font-footer;
+    justify-content: space-between;
 }
 
 .footer-post-info {
@@ -58,6 +61,7 @@
 .footer-post-desc {
     display: flex;
     flex-direction: column;
+    width: 200px;
     gap: 5px;
 }
 
@@ -76,6 +80,22 @@
     display: flex;
     flex-direction: column;
     width: 302px;
-    gap: 23px;
-    
+    gap: 23px;    
+}
+
+.footer-secondary {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    align-self: center;
+    margin-bottom: 222px;
+    margin-top: 22px;
+}
+
+.footer-info {
+    color: $color-placeholder-text;
+    font-family: $font-primary;
+    text-decoration: none;
+    font-weight: 400; 
+    font-size: 12px;
 }

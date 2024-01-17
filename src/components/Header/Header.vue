@@ -9,13 +9,13 @@
                 <div class="logo-container">
                     <img id="logo" src="@/assets/Shape 2.svg" alt="">
                 </div>
-                <h1 id="headerTitle">Kenaz</h1>
+                <h1><a href="/" id="headerTitle">Kenaz</a></h1>
             </div>
             <div class="navigation-section">
                 <ul class="main-navigation">
-                    <li class="main-nav-item"><a>Media</a></li>
-                    <li class="main-nav-item"><a>Marketing</a></li>
-                    <li class="main-nav-item"><a>Contact</a></li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Media</a></li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Marketing</a></li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Contact</a></li>
                 </ul>
                 <div class="logo-container">
                     <img src="@/assets/search 1.svg" alt="Search" id="searchIcon">
