@@ -1,0 +1,90 @@
+@import '../../styles/base/colors';
+@import '../../styles/base/typography';
+
+
+.carousel {
+    align-self: center;
+    margin-top: 18px;
+    width: 940px;
+    height: 425px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    display: block;
+    width: 940px;
+    z-index: -1;
+    position:relative;
+}
+
+.img-container {
+    display:inline-block;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(255,255,255,0) 100%);
+}
+
+.splide__arrows {
+    position: relative;
+    top: 220px;
+    background: none; // Remove default background
+    
+  
+    .splide__arrow--prev {
+      left: 10px;  // Adjust the left position as needed
+    }
+  
+    .splide__arrow--next {
+      right: 10px;  // Adjust the right position as needed
+    }
+}
+
+.splide__arrow--prev {
+    content: url('@/../../../assets/arrowLeft.svg'); // Replace with your SVG path
+}
+
+.slide-info {
+    position: absolute;
+    color: $color-font-primary;
+    top: 241px;
+    padding-top: 5px;
+    padding-left: 30px;
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slide-title {
+    font-family: $font-secondary;
+    text-wrap: wrap;
+    font-size: 34px;
+}
+
+.slide-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.slide-detail-text {
+    font-family: $font-primary;
+    font-size: 12px;
+    font-weight: 400; 
+}
+
+.button-read-article {
+    width: 120px;
+    height: 30px;
+    font-family: $font-primary;
+    background: none;
+    color: $color-font-primary;
+    border: 1px solid $color-font-primary;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        text-decoration: underline;
+        scale: 1.05;
+    }
+}
