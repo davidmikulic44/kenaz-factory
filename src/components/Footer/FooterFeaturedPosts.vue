@@ -14,7 +14,7 @@
                 </div>
             </article>
 
-            <img src="../../assets/Line.svg" class="footer-post-line">
+            
 
             <article class="footer-single-post">
                 <div class="footer-post-desc">
@@ -29,7 +29,7 @@
                 </div>
             </article>
 
-            <img src="../../assets/Line.svg" class="footer-post-line">
+            
             <article class="footer-single-post">
                 <div class="footer-post-desc">
                     <div class="footer-post-header">
