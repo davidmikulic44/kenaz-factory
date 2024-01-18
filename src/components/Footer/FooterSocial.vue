@@ -1,6 +1,5 @@
 <script setup>
-    import './styles/_footerSocial.scss'
-    import './styles/_footer.scss'
+    
 </script>
 
 <template>
@@ -19,8 +18,5 @@
             <img src="../../assets/You tube.svg" alt="">
             <img src="../../assets/Skype.svg" alt="">
         </div>
-        
-        
-        
     </section>
 </template>

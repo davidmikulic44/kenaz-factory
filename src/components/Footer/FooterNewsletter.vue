@@ -1,6 +1,4 @@
 <script setup>
-    import './styles/_footerNewsletter.scss'
-    import './styles/_footer.scss'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-    import './styles/_footer.scss';
+    
 </script>
 
 <template>

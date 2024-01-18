@@ -1,5 +1,5 @@
 <script setup>
-    import './styles/_footerTwitterFeed.scss'
+    
 </script>
 
 <template>

@@ -22,30 +22,36 @@
     }
 }
 
-.active {
-    background-color: #299EC3;
+#category1, #category2, #category3, #category4, #category5, #category6{
+    &:hover:not(.active) {
+        background-color: lighten($color-header-secondary, 5);
+    }
+    &.active {
+        background-color: #299EC3;
+        border-bottom: 0px;
+    }
 }
 
-#category1:hover:not(.active) {
+#category1 {
     border-bottom: 4px solid $color-category-1;
 }
 
-#category2:hover:not(.active) {
+#category2 {
     border-bottom: 4px solid $color-category-2;
 }
 
-#category3:hover:not(.active) {
+#category3 {
     border-bottom: 4px solid $color-category-3;
 }
 
-#category4:hover:not(.active) {
+#category4 {
     border-bottom: 4px solid $color-category-4;
 }
 
-#category5:hover:not(.active) {
+#category5 {
     border-bottom: 4px solid $color-category-5;
 }
 
-#category6:hover:not(.active) {
+#category6 {
     border-bottom: 4px solid $color-category-6;
 }

@@ -1,7 +1,5 @@
 <script setup>
-    import { reactive } from 'vue';
-    import './styles/_footerTagsWidget.scss'
-    import './styles/_footer.scss'
+    
     let selectedTags = reactive([]);
 
     const toggleTag = (tagId) => {

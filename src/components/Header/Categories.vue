@@ -2,7 +2,7 @@
   import { ref } from 'vue';
   import './styles/_categories.scss';
 
-  const activeCategory = ref(null);
+  const activeCategory = ref('category1');
 
   const handleClick = (category) => {
     activeCategory.value = category;
