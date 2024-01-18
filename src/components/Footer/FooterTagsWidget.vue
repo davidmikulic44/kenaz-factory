@@ -1,5 +1,9 @@
 <script setup>
-    
+    import { reactive } from 'vue';
+    const tagList = ['assueverit', 'utroquoe', 'probo', 'assuev', 'dolor',
+                    'adipiscing', 'elit', 'neque', 'vestibulum', 'mattis',
+                    'lorem', 'consectetur', 'fusce'];
+
     let selectedTags = reactive([]);
 
     const toggleTag = (tagId) => {
@@ -19,9 +23,10 @@
         </div>
         <ul class="footer-tags">
             <li 
-                v-for="(tag) in ['assueverit', 'utroquoe', 'probo', 'assuev', 'dolor', 'adipiscing', 'elit', 'neque', 'vestibulum', 'mattis', 'lorem', 'consectetur', 'fusce']"
+                v-for="(tag) in tagList"
                 :key="tag"
-                :class="{ 'footer-single-tag': true, 'active-tag': selectedTags.includes(tag) }"
+                :class="{ 'footer-single-tag': true, 
+                'active-tag': selectedTags.includes(tag) }"
                 @click="toggleTag(tag)"
             >
                 {{ tag }}
