@@ -1,0 +1,71 @@
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+@import 'feedCategories';
+
+.feed-articles {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.feed-single-section {
+    width: 612px;
+    height: 325px;
+    background-color: $color-font-primary;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 15px;
+    padding-bottom: 28px;
+    margin-bottom: 17px;
+}
+
+.feed-container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.feed-title {
+    color: $color-font-feed-title;
+    font-family: $font-secondary;
+    font-size: 24px;
+}
+
+.feed-read-all {
+    color: $color-category-1;
+    font-family: $font-primary;
+
+    &:hover {
+        color: darken($color-category-1, 15);
+    }
+}
+
+.feed-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feed-article-title {
+    color: $color-font-feed-title;
+    font-family: $font-secondary;
+    font-size: 14px;
+    
+}
+
+.feed-article-image {
+    width: inherit;
+    height: 128px;
+    object-fit: cover;
+    margin-bottom: 6px;
+}
+
+.feed-articles {
+    margin-top: 30px;
+}
+
+.feed-single-article {
+    width: 170px;
+}

@@ -4,6 +4,7 @@
         <Categories></Categories>
         <Banner></Banner>
         <ImageCarousel></ImageCarousel>
+        <Feed></Feed>
         <Footer></Footer>
     
 </template>
@@ -13,7 +14,7 @@
     import Footer from '@/components/Footer/Footer.vue';
     import Banner from '@/components/Banner/Banner.vue'
     import ImageCarousel from '@/components/ImageCarousel/ImageCarousel.vue'
-
+    import Feed from '@/components/Feed/Feed.vue';
     export default {
         components: {
             Header,
@@ -21,6 +22,7 @@
             Footer,
             Banner,
             ImageCarousel,
+            Feed,
         },
     }
 
