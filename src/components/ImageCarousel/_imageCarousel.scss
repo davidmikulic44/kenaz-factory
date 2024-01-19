@@ -22,23 +22,20 @@
     background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(255,255,255,0) 100%);
 }
 
-.splide__arrows {
-    position: relative;
-    top: 220px;
-    background: none; // Remove default background
-    
-  
-    .splide__arrow--prev {
-      left: 10px;  // Adjust the left position as needed
-    }
-  
-    .splide__arrow--next {
-      right: 10px;  // Adjust the right position as needed
-    }
-}
+.splide__arrow {
+    background: none;
+    opacity: 1;
+    border-radius: 0%;
+    top: 212px;
+    height: 53px;
+    width: 36px;
 
-.splide__arrow--prev {
-    content: url('@/../../../assets/arrowLeft.svg'); // Replace with your SVG path
+    svg {
+        height: 53px;
+        width: 36px;
+        fill: $color-font-primary;
+        
+    }
 }
 
 .slide-info {
