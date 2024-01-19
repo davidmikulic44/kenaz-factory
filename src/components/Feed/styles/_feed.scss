@@ -14,7 +14,7 @@
     background-color: $color-font-primary;
     padding-left: 31px;
     padding-right: 31px;
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 28px;
     margin-bottom: 17px;
 }
@@ -53,6 +53,10 @@
     font-family: $font-secondary;
     font-size: 14px;
     
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
 .feed-article-image {
