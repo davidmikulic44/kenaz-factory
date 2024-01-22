@@ -2,6 +2,7 @@
     import './styles/_feed.scss';
     import FeedNews from './FeedNews.vue';
     import FeedSport from './FeedSport.vue';
+    import FeedRatedPosts from './FeedRatedPosts.vue';
 </script>
 
 <template>
@@ -11,7 +12,7 @@
             <FeedSport></FeedSport>
         </div>
         <div class="feed-column2">
-
+            <FeedRatedPosts></FeedRatedPosts>
         </div>
     </div>
 </template>

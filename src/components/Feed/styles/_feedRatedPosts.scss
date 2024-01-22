@@ -1,0 +1,51 @@
+.rated-posts-container {
+    display: flex;
+    flex-direction: column;
+    height:667px;
+    width: 301px;
+    align-items: center;
+}
+
+.rated-posts-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    background-color: darken($color-header-secondary,5);
+}
+
+.rated-posts-header-title {
+    font-family: $font-primary;
+    color: $color-font-primary;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rated-posts-single{
+    justify-content: space-evenly;
+    width: 100%;
+    height: 117px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    background-color: $color-header-secondary;
+}
+
+.posts-container {
+    width: 100%;
+}
+
+.rated-posts-single-info {
+    width: 100%;
+}
+
+.rated-post-title {
+    width: 150px;
+    height: 52px;
+    font-size: 14px;
+    font-family: $font-secondary;
+}
