@@ -4,6 +4,7 @@
     height:667px;
     width: 301px;
     align-items: center;
+    overflow: hidden;
 }
 
 .rated-posts-header {
@@ -22,9 +23,14 @@
     color: $color-font-primary;
     font-size: 14px;
     font-weight: 400;
+    text-transform: capitalize;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
-.rated-posts-single{
+.rated-post-single{
     justify-content: space-evenly;
     width: 100%;
     height: 117px;
@@ -33,13 +39,20 @@
     padding: 30px;
     align-items: center;
     background-color: $color-header-secondary;
+    border-bottom: 1px solid darken($color-header-secondary, 6);
+    &:hover {
+        background-color: darken($color-header-secondary, 3);
+        cursor: pointer;
+    }
 }
 
 .posts-container {
     width: 100%;
+    height: 667px;
+    background-color: $color-header-secondary   ;
 }
 
-.rated-posts-single-info {
+.rated-post-single-info {
     width: 100%;
 }
 
@@ -48,4 +61,36 @@
     height: 52px;
     font-size: 14px;
     font-family: $font-secondary;
+    color: $color-font-primary;
+}
+
+.rated-post-info {
+    font-family: $font-primary;
+    color: $color-font-dim;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.date {
+    align-self: left;
+}
+
+.comments {
+    align-self: flex-end;
+    padding-right: 20px;
+}
+
+.rated-post-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rated-post-comments-icon {
+    width: 11px;
+}
+
+.active-rated {
+    color: $color-category-5;
+    text-decoration: underline;
 }
