@@ -26,32 +26,52 @@
     &:hover:not(.active) {
         background-color: lighten($color-header-secondary, 5);
     }
-    &.active {
-        background-color: #299EC3;
-        border-bottom: 0px;
-    }
 }
 
 #category1 {
     border-bottom: 4px solid $color-category-1;
+    &.active {
+        background-color: $color-category-1;
+        border-bottom: 0px;
+    }
 }
 
 #category2 {
     border-bottom: 4px solid $color-category-2;
+    &.active {
+        background-color: $color-category-2;
+        border-bottom: 0px;
+    }
 }
 
 #category3 {
     border-bottom: 4px solid $color-category-3;
+    &.active {
+        background-color: $color-category-3;
+        border-bottom: 0px;
+    }
 }
 
 #category4 {
     border-bottom: 4px solid $color-category-4;
+    &.active {
+        background-color: $color-category-4;
+        border-bottom: 0px;
+    }
 }
 
 #category5 {
     border-bottom: 4px solid $color-category-5;
+    &.active {
+        background-color: $color-category-5;
+        border-bottom: 0px;
+    }
 }
 
 #category6 {
     border-bottom: 4px solid $color-category-6;
+    &.active {
+        background-color: $color-category-6;
+        border-bottom: 0px;
+    }
 }
