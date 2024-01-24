@@ -1,6 +1,19 @@
 .banner-image {
-    width: 940px;
-    height: 120px;
     object-fit: cover;
     margin-top: 20px;
+}
+
+.banner-big {
+    width: 940px;
+    height: 120px;
+}
+
+.banner-mid {
+    width: 620px;
+    height: 120px;
+}
+
+.banner-sml {
+    width: 300px;
+    height: 250px;
 }

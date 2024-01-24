@@ -1,7 +1,17 @@
+@import '../../../styles/base/mixins';
+
 .news {
-    border-left: 10px solid $color-category-1;
+    @include CategoryFeed($color-category-1);
 }
 
 .sport {
-    border-left: 10px solid $color-category-3;
+    @include CategoryFeed($color-category-3);
+}
+
+.business {
+    @include CategoryFeed($color-category-2);
+}
+
+.news-carousel-container {
+    @include CategoryFeed($color-category-5);
 }

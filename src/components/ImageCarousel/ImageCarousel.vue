@@ -11,7 +11,7 @@
 
 <template>
     <div class="carousel">
-        <Splide :options="splideOptions" aria-label="My Favorite Images">
+        <Splide :options="splideOptions">
             <SplideSlide>
                 <div class="slide-info">
                     <div class="slide-detail">

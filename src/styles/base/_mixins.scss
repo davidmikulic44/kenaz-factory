@@ -8,3 +8,15 @@
         background-position: 0 100%;
     }
 }
+
+@mixin CategoryFeed($color) {
+    border-left: 10px solid $color;
+    width: 620px;
+    height: 325px;
+    background-color: $color-font-primary;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    margin-top: 17px;
+}

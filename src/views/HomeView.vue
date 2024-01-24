@@ -1,10 +1,10 @@
 <template>
-    
         <Header></Header>
         <Categories></Categories>
-        <Banner></Banner>
+        <BannerBig></BannerBig>
         <ImageCarousel></ImageCarousel>
         <Feed></Feed>
+        <BannerBig></BannerBig>
         <Footer></Footer>
     
 </template>
@@ -12,7 +12,7 @@
     import Header from '@/components/Header/Header.vue';
     import Categories from '@/components/Header/Categories.vue';
     import Footer from '@/components/Footer/Footer.vue';
-    import Banner from '@/components/Banner/Banner.vue'
+    import BannerBig from '@/components/Banner/BannerBig.vue'
     import ImageCarousel from '@/components/ImageCarousel/ImageCarousel.vue'
     import Feed from '@/components/Feed/Feed.vue';
     export default {
@@ -20,7 +20,7 @@
             Header,
             Categories,
             Footer,
-            Banner,
+            BannerBig,
             ImageCarousel,
             Feed,
         },
