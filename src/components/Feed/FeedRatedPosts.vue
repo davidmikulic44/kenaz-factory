@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <div class="rated-posts-container">
+    <aside class="rated-posts-container">
         <div class="rated-posts-header">
             <h6
             v-for="(category, index) in categoryList"
@@ -84,5 +84,5 @@
             </div>  
             
         </div>
-    </div>
+    </aside>
 </template>

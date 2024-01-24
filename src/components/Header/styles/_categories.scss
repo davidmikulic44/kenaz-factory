@@ -1,5 +1,6 @@
 @import '../../../styles/base/colors';
 @import '../../../styles/base/typography';
+@import '../../../styles/base/mixins';
 
 .secondary {
     background-color: $color-header-secondary;
@@ -17,61 +18,32 @@
     -webkit-box-sizing: border-box;
     height: 53px;
     cursor: pointer;
-    &:hover{
-        transition: ease-in-out 0.1s;
-    }
 }
 
 #category1, #category2, #category3, #category4, #category5, #category6{
-    &:hover:not(.active) {
-        background-color: lighten($color-header-secondary, 5);
-    }
+    transition: all ease-in-out 0.2s;
 }
 
 #category1 {
-    border-bottom: 4px solid $color-category-1;
-    &.active {
-        background-color: $color-category-1;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-1);
 }
 
 #category2 {
-    border-bottom: 4px solid $color-category-2;
-    &.active {
-        background-color: $color-category-2;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-2);
 }
 
 #category3 {
-    border-bottom: 4px solid $color-category-3;
-    &.active {
-        background-color: $color-category-3;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-3);
 }
 
 #category4 {
-    border-bottom: 4px solid $color-category-4;
-    &.active {
-        background-color: $color-category-4;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-4);
 }
 
 #category5 {
-    border-bottom: 4px solid $color-category-5;
-    &.active {
-        background-color: $color-category-5;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-5);
 }
 
 #category6 {
-    border-bottom: 4px solid $color-category-6;
-    &.active {
-        background-color: $color-category-6;
-        border-bottom: 0px;
-    }
+    @include CategoryAnimation($color-category-6);
 }
