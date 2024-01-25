@@ -1,0 +1,43 @@
+.tv-container {
+    width: 300px;
+    height: 322px;
+    background-color: $color-font-primary;
+    padding-top: 15px;
+}
+
+.tv-heading {
+    font-size: 24px;
+    color: $color-font-feed-title;
+    font-family: $font-secondary;
+    margin-bottom: 31px;
+    padding-left: 30px;
+}
+
+.video-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: $font-secondary;
+    color: $color-font-feed-title;
+}
+
+.video-date {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    font-family: $font-primary;
+    color: $color-font-footer;
+}
+
+.tv-frame {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.tv-info {
+    padding-left: 30px;
+    margin-top: 17px;
+}

@@ -3,6 +3,16 @@
 @import 'feedCategories';
 @import 'feedRatedPosts';
 @import 'feedArticleCarousel';
+@import 'feedSocial';
+@import 'feedTV';
+@import 'feedBanners';
+
+.feed-column1, .feed-column2{
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+}
 
 .feed-articles {
     display: flex;

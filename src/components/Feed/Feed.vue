@@ -6,6 +6,9 @@
     import BannerMid from '../Banner/BannerMid.vue';
     import FeedBusiness from './FeedBusiness.vue';
     import FeednewsCarouselDouble from './FeedNewsCarouselDouble.vue'
+    import FeedSocial from './FeedSocial.vue';
+    import FeedTV from './FeedTV.vue';
+    import SidebarBanners from './SidebarBanners.vue';
 </script>
 
 <template>
@@ -20,6 +23,9 @@
         </div>
         <div class="feed-column2">
             <FeedRatedPosts></FeedRatedPosts>
+            <FeedSocial></FeedSocial>
+            <FeedTV></FeedTV>
+            <SidebarBanners></SidebarBanners>
         </div>
     </div>
 </template>
