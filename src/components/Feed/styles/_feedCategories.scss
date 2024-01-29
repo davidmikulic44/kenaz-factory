@@ -1,5 +1,3 @@
-@import '../../../styles/base/mixins';
-
 .news {
     @include CategoryFeed($color-category-1);
 }

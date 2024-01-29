@@ -1,5 +1,6 @@
 @import '../../../styles/base/colors';
 @import '../../../styles/base/typography';
+@import '../../../styles/base/mixins';
 @import 'feedCategories';
 @import 'feedRatedPosts';
 @import 'feedArticleCarousel';
@@ -8,9 +9,8 @@
 @import 'feedBanners';
 
 .feed-column1, .feed-column2{
+    @include FlexColumn();
     gap: 17px;
-    display: flex;
-    flex-direction: column;
     margin-top: 17px;
 }
 
@@ -21,10 +21,8 @@
 }
 
 .feed-container {
-    display: flex;
-    flex-direction: row;
+    @include FlexSpaceBetween();
     align-self: center;
-    justify-content: space-between;
     width: 940px;
 }
 
@@ -44,9 +42,7 @@
 }
 
 .feed-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include FlexSpaceBetween();
 }
 
 .feed-article-title {

@@ -19,3 +19,37 @@
     padding-top: 25px;
     padding-bottom: 28px;
 }
+
+@mixin FlexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexCenterColumn() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@mixin FlexCenterVertical() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin FlexCenterHorizontal() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin FlexSpaceBetween() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin FlexColumn() {
+    display: flex;
+    flex-direction: column;
+}

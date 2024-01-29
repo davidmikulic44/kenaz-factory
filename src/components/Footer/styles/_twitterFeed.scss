@@ -1,7 +1,6 @@
 .footer-tweets {
+    @include FlexColumn();
     gap: 40px;
-    display: flex;
-    flex-direction: column;
 }
 
 .tweet-header {

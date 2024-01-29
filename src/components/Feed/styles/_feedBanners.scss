@@ -1,7 +1,5 @@
 .sidebar-banners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include FlexCenter();
     gap: 10px;
     width: 300px;
     height: 165px;

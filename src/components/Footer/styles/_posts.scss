@@ -12,11 +12,10 @@
 }
 
 .footer-single-post {
+    @include FlexSpaceBetween();
     margin-top: 25px;
-    display: flex;
     gap: 30px;
     height: 94px;
-    justify-content: space-between;
     border-bottom: 1px solid darken($color-font-footer, 20);
 }
 
@@ -27,20 +26,17 @@
 }
 
 .footer-post-desc {
-    display: flex;
-    flex-direction: column;
+    @include FlexColumn();
     width: 200px;
     gap: 5px;
 }
 
 .footer-post-header {
-    display: flex;
-    justify-content: space-between;
+    @include FlexSpaceBetween();
     width: inherit;
 }
 
 .footer-post-title {
     font-family: $font-secondary;
     color: $color-title-footer;
-    
 }

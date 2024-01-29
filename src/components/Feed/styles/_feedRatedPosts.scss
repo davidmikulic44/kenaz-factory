@@ -1,20 +1,15 @@
 .rated-posts-container {
-    display: flex;
-    flex-direction: column;
-    height:667px;
+    @include FlexCenterColumn();
+    height: 667px;
     width: 301px;
-    align-items: center;
     overflow: hidden;
 }
 
 .rated-posts-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include FlexCenter();
     gap: 20px;
     height: 50px;
     width: 100%;
-    align-items: center;
     background-color: darken($color-header-secondary,5);
 }
 
@@ -31,13 +26,11 @@
 }
 
 .rated-post-single{
+    @include FlexCenterVertical();
     justify-content: space-evenly;
     width: 100%;
     height: 117px;
-    display: flex;
-    flex-direction: row;
     padding: 30px;
-    align-items: center;
     background-color: $color-header-secondary;
     border-bottom: 1px solid darken($color-header-secondary, 6);
     &:hover {
@@ -49,7 +42,7 @@
 .posts-container {
     width: 100%;
     height: 667px;
-    background-color: $color-header-secondary   ;
+    background-color: $color-header-secondary;
 }
 
 .rated-post-single-info {
@@ -81,8 +74,7 @@
 }
 
 .rated-post-header {
-    display: flex;
-    flex-direction: column;
+    @include FlexColumn();
     width: 100%;
 }
 

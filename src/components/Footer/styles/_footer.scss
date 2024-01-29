@@ -1,5 +1,6 @@
 @import '../../../styles/base/colors';
 @import '../../../styles/base/typography';
+@import '../../../styles/base/mixins';
 @import 'newsletter';
 @import 'socialLinks';
 @import 'tagsWidget';
@@ -7,11 +8,10 @@
 @import 'posts';
 
 .footer-container-big {
+    @include FlexCenter();
+    @include FlexColumn();
     width: 100%;
     background-color: $color-header;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
     border-top: 23px solid $color-header-secondary;
     margin-top: 20px;
     
@@ -19,12 +19,11 @@
 
 .footer-primary {
     width: 940px;
-    display: flex;
-    flex-direction: column;
+    @include FlexCenter();
+    @include FlexColumn();
     gap: 17px;
     padding-top: 50px;
     padding-bottom: 222px;
-    align-self: center;
 }
 
 .footer-row1 {
@@ -51,15 +50,13 @@
 }
 
 .footer-section-container {
-    display: flex;
-    flex-direction: column;
+    @include FlexColumn();
     width: 302px;
     gap: 23px;    
 }
 
 .footer-secondary {
-    display: flex;
-    justify-content: space-between;
+    @include FlexSpaceBetween();
     width: 940px;
     align-self: center;
     margin-bottom: 222px;

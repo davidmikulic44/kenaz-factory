@@ -1,13 +1,10 @@
 .social-container {
     gap: 10px;
-    display: flex;
-    flex-direction: column;
+    @include FlexColumn();
 }
 
 .social-network {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include FlexCenterVertical();
     cursor: pointer;
 }
 
@@ -19,11 +16,10 @@
 }
 
 .social-action {
+    @include FlexCenterVertical();
     width: 120px;
     height: 40px;
     background-color: $color-social-background;
-    display: flex;
-    align-items: center;
     padding-left: 14px;
     color: $color-font-feed-title;
     font-family: $font-secondary;
@@ -32,10 +28,9 @@
 }
 
 .social-fans-number {
+    @include FlexCenterVertical();
     width: 120px;
     height: 100%;
-    display: flex;
-    align-items: center;
     color: $color-font-primary;
     font-size: 12px;
     font-family: $font-primary;
