@@ -9,7 +9,7 @@
                 <div class="logo-container">
                     <img id="logo" src="@/assets/Shape 2.svg" alt="">
                 </div>
-                <h1><a href="/" id="headerTitle">Kenaz</a></h1>
+                <h1 id="headerTitle"><router-link to="/">Kenaz</router-link></h1>
             </div>
             <div class="navigation-section">
                 <ul class="main-navigation">

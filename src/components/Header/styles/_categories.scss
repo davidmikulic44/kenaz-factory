@@ -20,30 +20,30 @@
     cursor: pointer;
 }
 
-#category1, #category2, #category3, #category4, #category5, #category6{
+#news, #business, #sport, #life, #tech, #travel{
     transition: all ease-in-out 0.2s;
 }
 
-#category1 {
+#news {
     @include CategoryAnimation($color-category-1);
 }
 
-#category2 {
+#business {
     @include CategoryAnimation($color-category-2);
 }
 
-#category3 {
+#sport {
     @include CategoryAnimation($color-category-3);
 }
 
-#category4 {
+#life {
     @include CategoryAnimation($color-category-4);
 }
 
-#category5 {
+#tech {
     @include CategoryAnimation($color-category-5);
 }
 
-#category6 {
+#travel {
     @include CategoryAnimation($color-category-6);
 }

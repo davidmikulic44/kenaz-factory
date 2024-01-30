@@ -3,10 +3,12 @@
 @import '../../../styles/base/mixins';
 @import 'feedCategories';
 @import 'feedRatedPosts';
-@import 'feedArticleCarousel';
 @import 'feedSocial';
 @import 'feedTV';
 @import 'feedBanners';
+@import 'feedNewsCarousel';
+@import 'feedDoubleCarousel';
+@import 'feedNewsCarouselSingle';
 
 .feed-column1, .feed-column2{
     @include FlexColumn();
@@ -26,11 +28,7 @@
     width: 940px;
 }
 
-.feed-title {
-    color: $color-font-feed-title;
-    font-family: $font-secondary;
-    font-size: 24px;
-}
+
 
 .feed-read-all {
     color: $color-category-1;
@@ -38,6 +36,7 @@
 
     &:hover {
         color: darken($color-category-1, 15);
+        text-decoration: underline;
     }
 }
 

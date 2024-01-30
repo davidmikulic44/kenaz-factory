@@ -1,33 +1,41 @@
 <script setup>
   import { ref } from 'vue';
   import './styles/_categories.scss';
+  import { useRouter } from 'vue-router';
 
-  const categoryList = ['news', 'business', 
-                        'sport', 'life',
-                        'tech', 'travel',]
+  const categoryList = ['news', 'business', 'sport', 'life', 'tech', 'travel'];
 
-  const activeCategory = ref('category1');
+  const activeCategory = ref('news');
+
+  const router = useRouter();
+
+  const getCategoryLink = (category) => {
+    return category === 'news' ? '/' : '/category';
+  };
 
   const handleClick = (category) => {
     activeCategory.value = category;
+    console.log(activeCategory.value);
+    router.push({ path: getCategoryLink(category) });
   };
 </script>
 
 <template>
   <div class="header-container-big secondary">
     <header class="header-container">
-      <ul class="main-navigation">
-        <li
+      <div class="main-navigation">
+        <router-link
           v-for="(category, index) in categoryList"
           :key="index"
           class="category-nav-item"
-          :class="{ 'active': activeCategory === 'category' + (index + 1) }"
-          @click="handleClick('category' + (index + 1))"
-          :id="'category' + (index + 1)"
+          :class="{ 'active': activeCategory === category }"
+          @click="handleClick(category)"
+          :to="getCategoryLink(category)"
+          :id="category.toLowerCase()"
         >
           {{ category }}
-        </li>
-      </ul>
+        </router-link>
+      </div>
     </header>
   </div>
 </template>

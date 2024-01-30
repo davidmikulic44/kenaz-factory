@@ -1,7 +1,11 @@
+<script setup>
+const props = defineProps(['category']);
+</script>
+
 <template>
-    <section class="feed-single-section sport">
+    <section class="feed-single-section" :class="category">
         <div class="feed-header">
-            <h1 class="feed-title">Sport</h1>
+            <h1 class="feed-title">{{ category }}</h1>
             <a href="#" class="feed-read-all">See all</a>
         </div>
         <section class="feed-articles">

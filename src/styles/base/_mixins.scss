@@ -9,15 +9,36 @@
     }
 }
 
-@mixin CategoryFeed($color) {
+@mixin CategoryFeed($color, $width) {
     border-left: 10px solid $color;
-    width: 620px;
+    width: $width;
     height: 325px;
     background-color: $color-font-primary;
     padding-left: 31px;
     padding-right: 31px;
     padding-top: 25px;
     padding-bottom: 28px;
+    .feed-title {
+        color: $color-font-feed-title;
+        font-family: $font-secondary;
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+}
+
+@mixin CarouselArrows($color) {
+    position: absolute;
+    background: none;
+    z-index: 10;
+    cursor: pointer;
+    align-self: right;
+    outline: none;
+    border: none;
+    bottom: 92%;
+    fill: $color;
+    &:hover {
+        fill: darken($color, 15);
+    }
 }
 
 @mixin FlexCenter() {
