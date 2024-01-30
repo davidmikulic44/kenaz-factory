@@ -1,9 +1,8 @@
 <script setup>
     import './styles/_feed.scss';
     import FeedCategory from './FeedCategory.vue';
-    
     import FeedRatedPosts from './FeedRatedPosts.vue';
-    import BannerMid from '../Banner/BannerMid.vue';
+    import Banner from '../Banner/Banner.vue';
     import FeedBusiness from './FeedBusiness.vue';
     import FeednewsCarousel from './FeedNewsCarousel.vue'
     import FeedSocial from './FeedSocial.vue';
@@ -17,9 +16,9 @@
         <div class="feed-column1">
             <FeedCategory category="news"></FeedCategory>
             <FeedCategory category="sport"></FeedCategory>
-            <BannerMid></BannerMid>
+            <Banner size="mid"></Banner>
             <FeedBusiness></FeedBusiness>
-            <BannerMid></BannerMid>
+            <Banner size="mid"></Banner>
             <FeednewsCarousel></FeednewsCarousel>
             <FeedDoubleCarousel></FeedDoubleCarousel>
             

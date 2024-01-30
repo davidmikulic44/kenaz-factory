@@ -1,10 +1,10 @@
 <script setup>
-    import BannerSml from '../Banner/BannerSml.vue';
+    import Banner from '../Banner/Banner.vue';
 </script>
 
 <template>
     <div class="sidebar-banners">
-        <BannerSml></BannerSml>
-        <BannerSml></BannerSml>
+        <Banner size="small"></Banner>
+        <Banner size="small"></Banner>
     </div>
 </template>

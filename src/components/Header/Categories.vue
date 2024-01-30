@@ -1,23 +1,32 @@
 <script setup>
-  import { ref } from 'vue';
+  import { ref, onMounted } from 'vue';
   import './styles/_categories.scss';
   import { useRouter } from 'vue-router';
 
   const categoryList = ['news', 'business', 'sport', 'life', 'tech', 'travel'];
 
-  const activeCategory = ref('news');
+  const activeCategory = ref(localStorage.getItem('activeCategory') || 'news');
 
   const router = useRouter();
 
-  const getCategoryLink = (category) => {
-    return category === 'news' ? '/' : '/category';
+  const handleClick = (category) => {
+    if (category === 'news') {
+      activeCategory.value = 'news';
+      localStorage.setItem('activeCategory', 'news');
+      router.push('/');
+    } else {
+      activeCategory.value = category;
+      localStorage.setItem('activeCategory', category);
+      router.push({ path: getCategoryLink(category) });
+    }
   };
 
-  const handleClick = (category) => {
-    activeCategory.value = category;
-    console.log(activeCategory.value);
-    router.push({ path: getCategoryLink(category) });
-  };
+  onMounted(() => {
+    if (!activeCategory.value) {
+      activeCategory.value = 'news';
+    }
+  });
+
 </script>
 
 <template>
@@ -30,7 +39,7 @@
           class="category-nav-item"
           :class="{ 'active': activeCategory === category }"
           @click="handleClick(category)"
-          :to="getCategoryLink(category)"
+          to="/category"
           :id="category.toLowerCase()"
         >
           {{ category }}
