@@ -14,7 +14,8 @@
       activeCategory.value = 'news';
       localStorage.setItem('activeCategory', 'news');
       router.push('/');
-    } else {
+    } 
+    else {
       activeCategory.value = category;
       localStorage.setItem('activeCategory', category);
       router.push({ path: getCategoryLink(category) });

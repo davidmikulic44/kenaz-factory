@@ -1,5 +1,9 @@
 <script setup>
-const props = defineProps(['category']);
+const props = defineProps(['category', 'numArticles']);
+
+const generateArticleArray = () => {
+  return new Array(Number(props.numArticles)).fill(null);
+};
 </script>
 
 <template>
@@ -8,32 +12,21 @@ const props = defineProps(['category']);
             <h1 class="feed-title">{{ category }}</h1>
             <a href="#" class="feed-read-all">See all</a>
         </div>
-        <section class="feed-articles">
-            <article class="feed-single-article">
+        <section :class="'feed-articles'+numArticles">
+            <article 
+            v-for="(index) in generateArticleArray()" 
+            :key="index" 
+            :class="'feed-single-article'+numArticles"
+            >
                 <img src="../../assets/banner.jpg" class="feed-article-image">
-                <div class="footer-post-header">
-                    <h6 class="footer-post-info">January 19, 2024</h6>
-                    <h6 class="footer-post-info">20</h6>
+                <div class="feed-article-info-container">
+                    <div class="feed-post-header">
+                        <h6 class="feed-post-info">January 19, 2024</h6>
+                        <h6 class="feed-post-info">20</h6>
+                    </div>
+                    <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
                 </div>
-                <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
-            </article>
-            <article class="feed-single-article">
-                <img src="../../assets/banner.jpg" class="feed-article-image">
-                <div class="footer-post-header">
-                    <h6 class="footer-post-info">January 19, 2024</h6>
-                    <h6 class="footer-post-info">20</h6>
-                </div>
-                <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
-            </article>
-            <article class="feed-single-article">
-                <img src="../../assets/banner.jpg" class="feed-article-image">
-                <div class="footer-post-header">
-                    <h6 class="footer-post-info">January 19, 2024</h6>
-                    <h6 class="footer-post-info">20</h6>
-                </div>
-                <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
             </article>
         </section>
-        
     </section>
 </template>

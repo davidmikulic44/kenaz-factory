@@ -3,7 +3,6 @@
     import FeedCategory from './FeedCategory.vue';
     import FeedRatedPosts from './FeedRatedPosts.vue';
     import Banner from '../Banner/Banner.vue';
-    import FeedBusiness from './FeedBusiness.vue';
     import FeednewsCarousel from './FeedNewsCarousel.vue'
     import FeedSocial from './FeedSocial.vue';
     import FeedTV from './FeedTV.vue';
@@ -14,10 +13,10 @@
 <template>
     <div class="feed-container">
         <div class="feed-column1">
-            <FeedCategory category="news"></FeedCategory>
-            <FeedCategory category="sport"></FeedCategory>
+            <FeedCategory category="news" numArticles="3"></FeedCategory>
+            <FeedCategory category="sport" numArticles="3"></FeedCategory>
             <Banner size="mid"></Banner>
-            <FeedBusiness></FeedBusiness>
+            <FeedCategory category="business" numArticles="4"></FeedCategory>
             <Banner size="mid"></Banner>
             <FeednewsCarousel></FeednewsCarousel>
             <FeedDoubleCarousel></FeedDoubleCarousel>
