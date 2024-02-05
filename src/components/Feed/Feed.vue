@@ -17,7 +17,6 @@
             <Banner size="mid"></Banner>
             <FeednewsCarousel></FeednewsCarousel>
             <FeedDoubleCarousel></FeedDoubleCarousel>
-            
         </div>
         <div class="feed-column2">
             <Sidebar></Sidebar>

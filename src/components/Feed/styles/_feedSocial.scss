@@ -6,6 +6,7 @@
 .social-network {
     @include FlexCenterVertical();
     cursor: pointer;
+    height: 40px;
 }
 
 .social-heading {
@@ -13,6 +14,7 @@
     color: $color-font-feed-title;
     font-family: $font-secondary;
     margin-bottom: 5px;
+    
 }
 
 .social-action {

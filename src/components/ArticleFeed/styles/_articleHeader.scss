@@ -1,0 +1,9 @@
+@import '../../../styles/base/mixins';
+
+.article-header-image-container {
+    width: 940px;
+    height: 588px;
+    margin-top: 17px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), 
+    rgba(117, 19, 93, 0)), url('@/assets/articleimage.png');
+}

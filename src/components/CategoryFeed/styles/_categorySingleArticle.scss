@@ -1,0 +1,56 @@
+@import '../../../styles/base/typography';
+@import '../../../styles/base/mixins';
+@import '../../../styles/base/colors';
+
+.category-single-article-container {
+    height: 380px;
+    @include FlexColumn;
+    gap: 15px;
+    border-bottom: 1px solid $color-social-background;
+    padding: 40px;
+}
+
+.category-single-article-header {
+    @include FlexColumn;
+    gap: 15px;
+}
+
+
+
+.category-single-article-info {
+    display: flex;
+    gap: 30px;
+    font-family: $font-primary;
+}
+.category-single-article-body {
+    display: flex;
+    gap: 10px;
+}
+
+.category-single-article-read {
+    @include FlexColumn;
+    gap: 20px;
+}
+
+.category-single-article-text {
+    font-family: $font-secondary;
+    font-size: 14px;
+    width: 380px;
+    text-wrap: wrap;
+}
+
+.category-single-article-read-article {
+    all: unset;
+    height: 30px;
+    width: 120px;
+    background-color: $color-header-secondary;
+    color: $color-font-primary;
+    text-align: center;
+    font-family: $font-primary;
+    font-size: 14px;
+    &:hover {
+        background-color: darken($color-header-secondary, 5);
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}

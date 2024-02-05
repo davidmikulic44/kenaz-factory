@@ -22,7 +22,9 @@
                         </h6>
                     </div>
                     <h1 class="slide-title">'Margot' breathlessly reimagines Anne Frank's sister</h1>
-                    <button class="button-read-article">Read article</button>
+                    <router-link to="/article">
+                        <button class="button-read-article">Read article</button>
+                    </router-link>
                 </div>
                 <div class="img-container">
                     <img src="../../assets/planine-u-sloveniji-scaled.jpg" class="carousel-img">
