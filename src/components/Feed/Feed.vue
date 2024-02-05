@@ -1,13 +1,10 @@
 <script setup>
     import './styles/_feed.scss';
     import FeedCategory from './FeedCategory.vue';
-    import FeedRatedPosts from './FeedRatedPosts.vue';
     import Banner from '../Banner/Banner.vue';
     import FeednewsCarousel from './FeedNewsCarousel.vue'
-    import FeedSocial from './FeedSocial.vue';
-    import FeedTV from './FeedTV.vue';
-    import SidebarBanners from './SidebarBanners.vue';
     import FeedDoubleCarousel from './FeedDoubleCarousel.vue';
+    import Sidebar from '../Sidebar/Sidebar.vue';
 </script>
 
 <template>
@@ -23,10 +20,7 @@
             
         </div>
         <div class="feed-column2">
-            <FeedRatedPosts></FeedRatedPosts>
-            <FeedSocial></FeedSocial>
-            <FeedTV></FeedTV>
-            <SidebarBanners></SidebarBanners>
+            <Sidebar></Sidebar>
         </div>
     </div>
 </template>

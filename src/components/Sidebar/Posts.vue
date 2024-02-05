@@ -1,5 +1,5 @@
 <script setup>
-    import SidebarPostSingle from './SidebarPostSingle.vue';
+    import SidebarPostSingle from './PostSingle.vue';
     import { ref } from 'vue';
     const categoryList = ['popular', 'top rated', 'comments'];
 
