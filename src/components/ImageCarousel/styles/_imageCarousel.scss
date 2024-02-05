@@ -3,14 +3,16 @@
     width: 940px;
     height: 400px;
     overflow: visible;
+    position: relative;
     .image-carousel-search-icon {
         position: absolute;
-        top: 38%;
+        top: 40%;
         left: 50%;
+        transform: translate(-50%, -50%);
         cursor: pointer;
         z-index: 10000;
     }
-
+    
     
 
     .image-carousel-image {
@@ -18,7 +20,7 @@
       height: 400px;
       background-size: cover;
       background-position: center;
-      position: relative;
+      
       object-fit: cover;
         img {
             width: inherit;
@@ -56,6 +58,14 @@
     width: 120px;
     height: 120px;
     cursor: pointer;
+    object-fit: cover;
+}
+
+.thumbnail-carousel {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .splide-thumbnail {
@@ -72,3 +82,8 @@
     }
 }
 
+.image-carousel-thumbnails {
+    ul {
+        gap: 10px;
+    }
+}

@@ -10,17 +10,16 @@
   const router = useRouter();
 
   const handleClick = (category) => {
-    if (category === 'news') {
-      activeCategory.value = 'news';
-      localStorage.setItem('activeCategory', 'news');
-      router.push('/');
-    } 
-    else {
-      activeCategory.value = category;
-      localStorage.setItem('activeCategory', category);
-      router.push({ path: getCategoryLink(category) });
-    }
-  };
+  if (activeCategory.value !== category) {
+    activeCategory.value = category;
+    localStorage.setItem('activeCategory', category);
+    router.push(category === 'news' ? '/' : `/category`);
+  }
+};
+  
+  const getCategoryLink = (category) => {
+  return category === 'news' ? '/' : `/category`;
+};
 
   onMounted(() => {
     if (!activeCategory.value) {
@@ -40,9 +39,9 @@
           class="category-nav-item"
           :class="{ 'active': activeCategory === category }"
           @click="handleClick(category)"
-          to="/category"
+          :to="getCategoryLink(category)"
           :id="category.toLowerCase()"
-        >
+        >     
           {{ category }}
         </router-link>
       </div>
