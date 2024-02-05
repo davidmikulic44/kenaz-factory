@@ -1,56 +1,27 @@
-<template>
-  <div>
-    <div v-if="isEnlargedImage" class="modal" @click="closeModal">
-      <div class="modal-content">
-        <img :src="currentImageSrc" />
-      </div>
-    </div>
-
-    <div
-      :class="{
-        'home-gallery': !isEnlargedImage,
-        'home-gallery-enlarged': isEnlargedImage,
-      }"
-      :key="isEnlargedImage.value"
-    >
-      <Splide
-        class="splide-home-gallery"
-        ref="main"
-        :options="mainOptionsData"
-        aria-label="Home Gallery Images"
-        @moved="updateCurrentImage"
-      >
-        <SplideSlide v-for="(image, index) in images" :key="index">
-          <div class="home-gallery__image">
-            <img :src="image" />
-            <div class="home-gallery__search-icon" @click="changeImageSize">
-              <img v-if="!isEnlargedImage" src="../../assets/SearchIcon.svg" />
-            </div>
-          </div>
-        </SplideSlide>
-      </Splide>
-    </div>
-  </div>
-</template>
-
 <script setup>
-import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import { ref, onMounted } from 'vue';
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
 import './styles/_imageCarousel.scss';
-import { ref, watch } from 'vue';
 
-let isEnlargedImage = ref(false);
+let imageZoomed = ref(false);
 let currentImageIndex = ref(0);
+let mainSplide = ref(null); 
+const main = ref();
+const thumbs = ref();
 
 const images = [
-  "../../assets/ImageCarousel/BigImage1.jpg",
-  "../../assets/ImageCarousel/Image2.jpg",
-  // Add more images as needed
+  {url: "/src/assets/ImageCarousel/BigImage1.jpg", id: 1},
+  {url: "/src/assets/ImageCarousel/Image2.jpg", id: 2},
+  {url: "/src/assets/ImageCarousel/Image3.jpg", id: 3},
+  {url: "/src/assets/ImageCarousel/Image4.jpg", id: 4},
 ];
+
+const mainSplideInstance = ref(null);
 
 const currentImageSrc = ref(images[currentImageIndex.value]);
 
-const mainOptionsData = {
+const splideOptions = {
   type: "fade",
   heightRatio: 0.5,
   pagination: false,
@@ -59,32 +30,92 @@ const mainOptionsData = {
 };
 
 const changeImageSize = () => {
-  isEnlargedImage.value = !isEnlargedImage.value;
+  imageZoomed.value = !imageZoomed.value;
   updateBodyScroll();
 };
 
 const closeModal = () => {
-  isEnlargedImage.value = false;
+  imageZoomed.value = false;
   updateBodyScroll();
 };
 
 const updateBodyScroll = () => {
   const body = document.body;
-  if (isEnlargedImage.value) {
+  if (imageZoomed.value) {
     body.style.overflow = 'hidden';
   } else {
     body.style.overflow = '';
   }
 };
 
-const updateCurrentImage = (splide) => {
-  currentImageIndex.value = splide.index;
-  currentImageSrc.value = images[currentImageIndex.value];
+const thumbnailOptions = {
+  fixedWidth: 120,
+  fixedHeight: 120,
+  isNavigation: true,
+  gap: 10,
+  pagination: false,
+  cover: true,
+  arrows: false,
 };
 
-// Watch for changes in currentImageIndex
-watch(currentImageIndex, (newIndex) => {
-  currentImageSrc.value = images[newIndex];
+
+
+const selectThumbnail = (index) => {
+  console.log('Thumbnail clicked, index:', index);
+
+  if (mainSplide.value) {
+    console.log('mainSplide:', mainSplide.value);
+    try {
+      mainSplide.value.go(index - 1);
+      console.log('go method called successfully');
+    } catch (error) {
+      console.error('Error calling go method:', error);
+    }
+  }
+};
+onMounted(() => {
+  mainSplide.value = main.value.splide;
+  mainSplide.value.sync(thumbs.value.splide);
 });
 
 </script>
+
+<template>
+  <div>
+    <div v-if="imageZoomed" class="modal" @click="closeModal">
+      <div class="modal-content">
+        <img :src="currentImageSrc" />
+      </div>
+    </div>
+
+    <div
+      class="image-carousel"
+      :key="imageZoomed.value"
+    >
+    <Splide ref="main" :options="splideOptions">
+        <SplideSlide v-for="image in images" :key="image.id">
+          
+            <div
+              class="image-carousel-image"
+              :style="{ backgroundImage: 'url(' + image.url + ')' }"
+            >
+            <div class="image-carousel-search-icon" @click="changeImageSize">
+              <img v-if="!imageZoomed" src="../../assets/SearchIcon.svg" />
+            </div>
+          </div>
+        </SplideSlide>
+      </Splide>
+    </div>
+    <div class="thumbnail-carousel">
+      <Splide ref="thumbs" :options="thumbnailOptions">
+        <SplideTrack>
+          <SplideSlide v-for="image in images" :key="image.id" :sync="main">
+            <div class="thumbnail-carousel-image" @click="selectThumbnail(image.id)">
+              <img class="thumbnail-image" :src="image.url" />
+            </div>
+          </SplideSlide>
+        </SplideTrack>
+      </Splide>
+    </div>
+  </div>
+</template>

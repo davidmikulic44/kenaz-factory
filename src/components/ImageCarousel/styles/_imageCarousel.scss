@@ -1,9 +1,9 @@
-.home-gallery {
+.image-carousel{
     margin-top: 17px;
     width: 940px;
     height: 400px;
     overflow: visible;
-    .home-gallery__search-icon {
+    .image-carousel-search-icon {
         position: absolute;
         top: 38%;
         left: 50%;
@@ -13,7 +13,7 @@
 
     
 
-    .home-gallery__image {
+    .image-carousel-image {
       width: 940px;
       height: 400px;
       background-size: cover;
@@ -26,11 +26,6 @@
             top: 0;
         }
     }
-}
-
-
-.home-gallery-enlarged {
-    margin-top: 17px;
 }
 
 .modal {
@@ -56,3 +51,24 @@
     top: 25%;
     left: 25%;
   }
+
+.thumbnail-image {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.splide-thumbnail {
+    position: relative;
+    display: flex;
+    gap: 20px;
+
+
+    bottom: 200px;
+    left: 20px;
+    
+    img {
+        object-fit: cover;
+    }
+}
+

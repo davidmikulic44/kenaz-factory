@@ -64,6 +64,5 @@
                     </section>
                 </SplideSlide>
             </Splide>
-         
     </div>
 </template>
