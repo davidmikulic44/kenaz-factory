@@ -1,4 +1,6 @@
 @import '../../../styles/base/mixins';
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
 
 .article-header-image-container {
     width: 940px;
@@ -6,4 +8,26 @@
     margin-top: 17px;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 1), 
     rgba(117, 19, 93, 0)), url('@/assets/articleimage.png');
+    @include FlexColumn;
+    gap: 20px;
+}
+
+.article-header-title {
+    color: $color-header-title;
+    font-family: $font-secondary;
+    font-size: 44px;
+}
+
+.article-header-date {
+    color: $color-header-title;
+    font-family: $font-primary;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.article-header-text {
+    position: relative;
+    top: 70%;
+    left: 20px;
+    width: 750px;
 }

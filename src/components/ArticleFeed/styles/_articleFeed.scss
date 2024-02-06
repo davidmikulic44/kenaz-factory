@@ -1,1 +1,29 @@
 @import './articleHeader';
+@import './comments';
+@import './commentSingle';
+@import './authorAbout';
+@import './article';
+@import '../../../styles/base/colors';
+@import '../../../styles/base/typography';
+@import '../../../styles/base/mixins';
+
+.article-section {
+    width: 620px;
+    background-color: $color-font-primary;
+    padding: 40px;
+    @include FlexColumn;
+    gap: 20px;
+}
+
+.article-section-title {
+    font-family: $font-secondary;
+    font-size:24px;
+    
+}
+
+.article-text {
+    font-family: $font-primary;
+    font-size: 13px;
+    font-weight: 400;
+    color: $color-hover-tag;
+}

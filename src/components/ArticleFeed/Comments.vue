@@ -3,7 +3,7 @@
   import CommentSingle from './CommentSingle.vue';
 
   const comments = ref([
-    { name: 'Matt Adams', comment: 'Molestias ultricies, ante quam urna ut volutpat, egestas dolor dui, nec hac ultrices nulla non netus.', time: new Date() },
+    { name: 'Matt Adams', comment: 'Molestias ultricies, ante quam urna ut volutpat, egestas dolor dui, nec hac ultrices nulla non netus.', time: new Date(2024, 1, 5, 23, 20) },
   ]);
 
   let commentName = ref('');
@@ -31,17 +31,18 @@
 </script>
 
 <template>
-  <div>
-    <h1>Comments</h1>
+  <div class="article-section">
+    <h1 class="article-section-title">Comments</h1>
     <CommentSingle v-for="(comment, index) in comments" :key="index" :name="comment.name" :comment="comment.comment" :time="comment.time" />
     
     <div class="add-a-comment">
-      <h1>Add a comment</h1>
-      <form @submit.prevent="addComment">
-        <input type="text" placeholder="Name" v-model="commentName" />
-        <input type="email" placeholder="Email" v-model="commentEmail" />
-        <textarea placeholder="Your Comment" v-model="commentText"></textarea>
-        <button type="submit">Submit Comment</button>
+      <h1 class="article-section-title">Add a comment</h1>
+      <p class="article-text">Molestias ultricies, ante quam urna ut volutpat, egestas dolor dui, nec hac ultrices nulla non netus. Placerat vehicula donec non suscipit egestas, augue vel suspendisse. Et felis venenatis blandit sed est ultrices, adipiscing urna.</p>
+      <form @submit.prevent="addComment" class="comment-form">
+        <input class="comment-input" type="text" placeholder="Name" v-model="commentName" />
+        <input class="comment-input" type="email" placeholder="Email" v-model="commentEmail" />
+        <textarea class="comment-input-text" placeholder="Your Comment" v-model="commentText"></textarea>
+        <button type="submit" class="submit-comment">Submit</button>
       </form>
     </div>
   </div>

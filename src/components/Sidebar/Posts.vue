@@ -1,5 +1,5 @@
 <script setup>
-    import SidebarPostSingle from './PostSingle.vue';
+    import PostSingle from './PostSingle.vue';
     import { ref } from 'vue';
     const categoryList = ['popular', 'top rated', 'comments'];
 
@@ -23,11 +23,11 @@
             class="rated-posts-header-title">{{ category }}</h6>
         </div>
         <div class="posts-container">
-            <SidebarPostSingle></SidebarPostSingle>
-            <SidebarPostSingle></SidebarPostSingle>
-            <SidebarPostSingle></SidebarPostSingle>
-            <SidebarPostSingle></SidebarPostSingle>
-            <SidebarPostSingle></SidebarPostSingle>
+            <PostSingle></PostSingle>
+            <PostSingle></PostSingle>
+            <PostSingle></PostSingle>
+            <PostSingle></PostSingle>
+            <PostSingle></PostSingle>
         </div>
     </aside>
 </template>

@@ -22,7 +22,7 @@
                 <p class="category-single-article-text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. 
                 </p>
-                <button class="category-single-article-read-article">Read article</button>
+                <router-link to="/article" class="category-single-article-read-article">Read article</router-link>
             </div>
         </div>
     </div>

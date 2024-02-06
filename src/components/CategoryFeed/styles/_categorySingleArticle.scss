@@ -48,6 +48,9 @@
     text-align: center;
     font-family: $font-primary;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
         background-color: darken($color-header-secondary, 5);
         cursor: pointer;

@@ -14,15 +14,17 @@ const formatTimestamp = (timestamp) => {
 </script>
 
 <template>
-  <div>
-    <img src="../../assets/commentpfp.png" alt="">
+  <div class="comment-container-outer">
+    <img src="../../assets/commentpfp.png" class="comment-pfp">
+    <div class="comment-container">
     <div class="comment-header">
       <div class="comment-info">
-        <h3>{{ name }}</h3>
-        <h6>{{ formatTimestamp(time) }}</h6>
+        <h3 class="comment-author">{{ name }}</h3>
+        <h6 class="comment-timestamp">{{ formatTimestamp(time) }}</h6>
       </div>
-      <button>Reply</button>
+      <button class="reply-button">Reply</button>
     </div>
-    <p>{{ comment }}</p>
+    <p class="article-text">{{ comment }}</p>
+  </div>
   </div>
 </template>

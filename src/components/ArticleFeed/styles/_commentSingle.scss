@@ -1,0 +1,57 @@
+@import '../../../styles/base/typography';
+@import '../../../styles/base/colors';
+@import '../../../styles/base/mixins';
+
+.comment-container-outer {
+    display: flex;
+    gap: 10px;
+}
+
+.comment-container {
+    @include FlexColumn;
+    gap: 10px;
+}
+
+.comment-pfp {
+    width: 58px;
+    height: 58px;
+    background-color: #ddd;
+}
+
+.reply-button {
+    all: unset;
+    cursor: pointer;
+    color: $color-header-secondary;
+    font-family: $font-primary;
+    font-size: 14px;
+    &:hover {
+        text-decoration: underline;
+        color: darken($color-header-secondary,5);
+    }
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+}
+
+.comment-info {
+    @include FlexCenterVertical;
+    gap: 20px;
+    
+}
+
+.comment-author {
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-header-secondary;
+}
+
+.comment-timestamp {
+    font-size: 11px;
+    font-family: $font-primary;
+    color: $color-font-footer;
+    font-weight: 400;
+}

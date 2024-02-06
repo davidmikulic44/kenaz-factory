@@ -1,5 +1,5 @@
 <template>
-    <div class="rated-post-single">
+    <router-link to="/article" class="rated-post-single">
         <div class="rated-post-single-info">
             <div class="rated-post-header">
                 <h6 class="rated-post-info comments">
@@ -10,5 +10,5 @@
             <h3 class="rated-post-title">Palestinians call off peace talks after clash</h3>
         </div>
         <img src="../../assets/manofsteel.jpeg" class="footer-post-image" alt="">
-    </div>
+    </router-link>
 </template>

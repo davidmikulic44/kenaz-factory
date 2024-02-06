@@ -24,7 +24,8 @@ const generateArticleArray = () => {
                         <h6 class="feed-post-info">January 19, 2024</h6>
                         <h6 class="feed-post-info">20</h6>
                     </div>
-                    <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
+                    <router-link to='/article'><h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
+                    </router-link>
                 </div>
             </article>
         </section>
