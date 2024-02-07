@@ -1,6 +1,6 @@
 <script setup>
+import FeedCarouselSingleArticle from './FeedCarouselSingleArticle.vue';
 const props = defineProps(['title']);
-
 const splideOptions = {
         rewind: true,
         pagination: false,
@@ -13,7 +13,6 @@ const splideOptions = {
 
 </script>
 
-
 <template>
     <div class="news-carousel-container-single">
         <div class="feed-header">
@@ -22,39 +21,19 @@ const splideOptions = {
         <Splide :options="splideOptions">
             <SplideSlide>
                 <section class="feed-articles">
-                    <article class="feed-single-article carousel-single">
-                        <img src="../../assets/banner.jpg" class="feed-article-image">
-                        <div class="footer-post-header">
-                            <h6 class="footer-post-info">January 19, 2024</h6>
-                        </div>
-                        <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
-                    </article>
+                    <FeedCarouselSingleArticle size="carousel-single"></FeedCarouselSingleArticle>
                 </section>
             </SplideSlide>
             <SplideSlide>
                 <section class="feed-articles">
-                    <article class="feed-single-article carousel-single">
-                        <img src="../../assets/planine-u-sloveniji-scaled.jpg" class="feed-article-image">
-                        <div class="footer-post-header">
-                            <h6 class="footer-post-info">January 19, 2024</h6>
-                        </div>
-                        <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
-                    </article>
+                    <FeedCarouselSingleArticle size="carousel-single"></FeedCarouselSingleArticle>
                 </section>
             </SplideSlide>
             <SplideSlide>
                 <section class="feed-articles">
-                    <article class="feed-single-article carousel-single">
-                        <img src="../../assets/manofsteel.jpeg" class="feed-article-image">
-                        <div class="footer-post-header">
-                            <h6 class="footer-post-info">January 19, 2024</h6>
-                        </div>
-                        <h3 class="feed-article-title">For Obama, MLK's shadow looms large ahead of speech</h3>
-                    </article>
+                    <FeedCarouselSingleArticle size="carousel-single"></FeedCarouselSingleArticle>
                 </section>
             </SplideSlide>
-        
         </Splide>
     </div>
-
 </template>

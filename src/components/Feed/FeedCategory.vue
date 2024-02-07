@@ -1,8 +1,7 @@
 <script setup>
 const props = defineProps(['category', 'numArticles']);
-
 const generateArticleArray = () => {
-  return new Array(Number(props.numArticles)).fill(null);
+    return new Array(Number(props.numArticles)).fill(null);
 };
 </script>
 
@@ -10,7 +9,7 @@ const generateArticleArray = () => {
     <section class="feed-single-section" :class="category">
         <div class="feed-header">
             <h1 class="feed-title">{{ category }}</h1>
-            <a href="#" class="feed-read-all">See all</a>
+            <router-link to="/category" class="feed-read-all">See all</router-link>
         </div>
         <section :class="'feed-articles'+numArticles">
             <article 

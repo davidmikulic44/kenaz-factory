@@ -1,14 +1,14 @@
 <script setup>
-    import PostSingle from './PostSingle.vue';
-    import { ref } from 'vue';
-    const categoryList = ['popular', 'top rated', 'comments'];
+import PostSingle from './PostSingle.vue';
+import { ref } from 'vue';
+const categoryList = ['popular', 'top rated', 'comments'];
 
-    const activeCategory = ref('popular');
+const activeCategory = ref('popular');
 
-    const handleClick = (category) => {
-        activeCategory.value = category;
-        
-    }
+const handleClick = (category) => {
+    activeCategory.value = category;
+    
+}
 </script>
 
 <template>

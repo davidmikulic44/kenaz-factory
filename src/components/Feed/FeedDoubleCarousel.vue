@@ -1,6 +1,5 @@
 <script setup>
     import FeedNewsCarouselSingle from './FeedNewsCarouselSingle.vue';
-
 </script>
 
 <template>

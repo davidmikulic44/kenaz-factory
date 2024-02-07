@@ -4,6 +4,7 @@
     import Social from './Social.vue';
     import TV from './TV.vue';
 </script>
+
 <template>
     <Posts></Posts>
     <Social></Social>

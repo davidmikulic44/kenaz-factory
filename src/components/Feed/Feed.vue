@@ -9,7 +9,7 @@
 
 <template>
     <div class="feed-container">
-        <div class="feed-column1">
+        <div class="main-column">
             <FeedCategory category="news" numArticles="3"></FeedCategory>
             <FeedCategory category="sport" numArticles="3"></FeedCategory>
             <Banner size="mid"></Banner>
@@ -18,8 +18,8 @@
             <FeednewsCarousel></FeednewsCarousel>
             <FeedDoubleCarousel></FeedDoubleCarousel>
         </div>
-        <div class="feed-column2">
+        <aside class="side-column">
             <Sidebar></Sidebar>
-        </div>
+        </aside>
     </div>
 </template>

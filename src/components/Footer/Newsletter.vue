@@ -11,6 +11,5 @@
             <input class="subscription-input" type="email" placeholder="Your email">
             <input class="subscription-submit" type="submit" value="Subscribe">
         </form>
-        
     </section>
 </template>

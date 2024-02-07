@@ -11,14 +11,14 @@
 <template>
     <ArticleHeader></ArticleHeader>
     <div class="feed-container">
-        <div class="feed-column1">
+        <div class="main-column">
             <Article></Article>
             <Banner size="mid"></Banner>
             <AuthorAbout></AuthorAbout>
             <Comments></Comments>
         </div>
-        <div class="feed-column2">
+        <aside class="side-column">
             <Sidebar></Sidebar>
-        </div>
+        </aside>
     </div>
 </template>

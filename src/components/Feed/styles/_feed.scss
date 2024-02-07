@@ -10,10 +10,13 @@
 @import 'feedDoubleCarousel';
 @import 'feedNewsCarouselSingle';
 
-.feed-column1, .feed-column2{
+.feed-container {
+    margin-top: 17px;
+}
+
+.main-column, .side-column {
     @include FlexColumn();
     gap: 17px;
-    margin-top: 17px;
 }
 
 .feed-articles, .feed-articles3, .feed-articles4 {
@@ -49,7 +52,6 @@
         display: flex;
         flex-direction: column;
     }
-    
 }
 
 .feed-single-article3 {
@@ -68,8 +70,6 @@
     align-self: center;
     width: 940px;
 }
-
-
 
 .feed-read-all {
     color: $color-category-1;

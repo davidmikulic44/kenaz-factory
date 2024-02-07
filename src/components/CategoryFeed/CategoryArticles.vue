@@ -2,8 +2,6 @@
     import CategorySingleArticle from './CategorySingleArticle.vue';
     import CategoryPagination from './CategoryPagination.vue';
     import './styles/_categoryFeed.scss';
-
-    
 </script>
 
 <template>

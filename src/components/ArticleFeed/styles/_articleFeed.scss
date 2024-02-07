@@ -18,12 +18,13 @@
 .article-section-title {
     font-family: $font-secondary;
     font-size:24px;
-    
+    color: $color-article-title;
 }
 
 .article-text {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 13px;
     font-weight: 400;
     color: $color-hover-tag;
+    line-height: 22px;
 }

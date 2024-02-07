@@ -1,11 +1,11 @@
 <script setup>
-    import { ref } from 'vue';
-    const pagesList = ['1','2','3','4','5','6','7','8','9','10']
-    const selectedPage = ref('1');
+import { ref } from 'vue';
+const pagesList = ['1','2','3','4','5','6','7','8','9','10']
+const selectedPage = ref('1');
 
-    const handleClick = (page) => {
-        selectedPage.value = page;
-    }
+const handleClick = (page) => {
+    selectedPage.value = page;
+}
 </script>
 
 <template>

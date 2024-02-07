@@ -1,6 +1,7 @@
 <script setup>
     import '@splidejs/vue-splide/css';
     import './_articleCarousel.scss';
+    import ArticleCarouselSlide from './ArticleCarouselSlide.vue';
     const splideOptions = {
         rewind: true,
         pagination: false,
@@ -12,56 +13,9 @@
 <template>
     <div class="carousel">
         <Splide :options="splideOptions">
-            <SplideSlide>
-                <div class="slide-info">
-                    <div class="slide-detail">
-                        <h6 class="slide-detail-text">January 18, 2024</h6>
-                        <h6 class="slide-detail-text">
-                            <img src="../../assets/comment ico.svg">
-                            22 comments
-                        </h6>
-                    </div>
-                    <h1 class="slide-title">'Margot' breathlessly reimagines Anne Frank's sister</h1>
-                    <router-link to="/article">
-                        <button class="button-read-article">Read article</button>
-                    </router-link>
-                </div>
-                <div class="img-container">
-                    <img src="../../assets/planine-u-sloveniji-scaled.jpg" class="carousel-img">
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="slide-info">
-                    <div class="slide-detail">
-                        <h6 class="slide-detail-text">January 18, 2024</h6>
-                        <h6 class="slide-detail-text">
-                            <img src="../../assets/comment ico.svg">
-                            30 comments
-                        </h6>
-                    </div>
-                    <h1 class="slide-title">Speech by the President: European Parliament Plenary</h1>
-                    <button class="button-read-article">Read article</button>
-                </div>
-                <div class="img-container">
-                    <img src="../../assets/banner.jpg" class="carousel-img">
-                </div>
-            </SplideSlide>
-            <SplideSlide>
-                <div class="slide-info">
-                    <div class="slide-detail">
-                        <h6 class="slide-detail-text">January 19, 2024</h6>
-                        <h6 class="slide-detail-text">
-                            <img src="../../assets/comment ico.svg">
-                            300 comments
-                        </h6>
-                    </div>
-                    <h1 class="slide-title">Gaming centar: projekt vrijedan 60 milijuna eura dolazi u Novsku! </h1>
-                    <button class="button-read-article">Read article</button>
-                </div>
-                <div class="img-container">
-                    <img src="../../assets/nsk.jpg" class="carousel-img">
-                </div>
-            </SplideSlide>
+            <ArticleCarouselSlide date="January 18, 2024" comments="22 comments" title="Margot' breathlessly reimagines Anne Frank's sister" image="/src/assets/planine-u-sloveniji-scaled.jpg"></ArticleCarouselSlide>
+            <ArticleCarouselSlide date="January 18, 2024" comments="22 comments" title="Margot' breathlessly reimagines Anne Frank's sister" image="/src/assets/planine-u-sloveniji-scaled.jpg"></ArticleCarouselSlide>
+            <ArticleCarouselSlide date="January 18, 2024" comments="22 comments" title="Margot' breathlessly reimagines Anne Frank's sister" image="/src/assets/planine-u-sloveniji-scaled.jpg"></ArticleCarouselSlide>
         </Splide>
     </div>
 

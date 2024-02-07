@@ -4,9 +4,8 @@
     import Newsletter from './Newsletter.vue';
     import TagsWidget from './TagsWidget.vue';
     import SiteInfo from './SiteInfo.vue';
-    import FeaturedPosts from './FeaturedPosts.vue';
-    import RandomPosts from './RandomPosts.vue';
     import TwitterFeed from './TwitterFeed.vue';
+    import FooterPosts from './FooterPosts.vue';
 </script>
 
 <template>
@@ -18,8 +17,8 @@
                 <TagsWidget></TagsWidget>
             </div>
             <div class="footer-row2">
-                <FeaturedPosts></FeaturedPosts>
-                <RandomPosts></RandomPosts>
+                <FooterPosts title="Random Posts"></FooterPosts>
+                <FooterPosts title="Featured"></FooterPosts>
                 <TwitterFeed></TwitterFeed>
             </div>
         </div>
