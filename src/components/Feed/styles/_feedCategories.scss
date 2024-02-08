@@ -1,15 +1,15 @@
 .news {
-  @include CategoryFeed($color-category-1, 620px);
+  @include CategoryFeed($color-category-1);
 }
 
 .sport {
-  @include CategoryFeed($color-category-3, 620px);
+  @include CategoryFeed($color-category-3);
 }
 
 .business {
-  @include CategoryFeed($color-category-2, 620px);
+  @include CategoryFeed($color-category-2);
 }
 
 .news-carousel-container {
-  @include CategoryFeed($color-category-5, 620px);
+  @include CategoryFeed($color-category-5);
 }

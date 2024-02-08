@@ -15,10 +15,8 @@
   }
 }
 
-@mixin CategoryFeed($color, $width) {
+@mixin CategoryFeed($color) {
   border-left: 10px solid $color;
-  width: $width;
-  height: 325px;
   background-color: $color-font-primary;
   padding-left: 31px;
   padding-right: 31px;

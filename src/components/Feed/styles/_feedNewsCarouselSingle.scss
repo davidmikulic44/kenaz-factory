@@ -1,5 +1,6 @@
 .news-carousel-container-single {
-  @include CategoryFeed($color-category-6, 300px);
+  @include CategoryFeed($color-category-6);
+  width: calc(50% - 10px);
 }
 
 .feed-single-article.carousel-single {

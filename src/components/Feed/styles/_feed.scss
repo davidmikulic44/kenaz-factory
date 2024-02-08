@@ -12,12 +12,14 @@
 
 .feed-container {
   margin-top: 17px;
+  gap: 20px;
 }
 
 .main-column,
 .side-column {
   @include FlexColumn();
   gap: 17px;
+  width: 620px;
 }
 
 .feed-articles,
