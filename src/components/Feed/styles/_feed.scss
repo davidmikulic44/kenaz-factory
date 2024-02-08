@@ -1,106 +1,108 @@
-@import '../../../styles/base/colors';
-@import '../../../styles/base/typography';
-@import '../../../styles/base/mixins';
-@import 'feedCategories';
-@import 'feedRatedPosts';
-@import 'feedSocial';
-@import 'feedTV';
-@import 'feedBanners';
-@import 'feedNewsCarousel';
-@import 'feedDoubleCarousel';
-@import 'feedNewsCarouselSingle';
+@import "../../../styles/base/colors";
+@import "../../../styles/base/typography";
+@import "../../../styles/base/mixins";
+@import "feedCategories";
+@import "feedRatedPosts";
+@import "feedSocial";
+@import "feedTV";
+@import "feedBanners";
+@import "feedNewsCarousel";
+@import "feedDoubleCarousel";
+@import "feedNewsCarouselSingle";
 
 .feed-container {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
-.main-column, .side-column {
-    @include FlexColumn();
-    gap: 17px;
+.main-column,
+.side-column {
+  @include FlexColumn();
+  gap: 17px;
 }
 
-.feed-articles, .feed-articles3, .feed-articles4 {
-    @include FeedArticles();
+.feed-articles,
+.feed-articles3,
+.feed-articles4 {
+  @include FeedArticles();
 }
 
 .feed-articles4 {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .feed-post-info {
-    font-family: $font-primary;
-    font-weight: 400;
-    color: $color-font-footer;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-font-footer;
 }
 
 .feed-post-header {
-    @include FlexSpaceBetween();
-    width: inherit;
+  @include FlexSpaceBetween();
+  width: inherit;
 }
 
-
 .feed-single-article4 {
-    width: 260px;
-    display: flex;
-    gap: 15px;
+  width: 260px;
+  display: flex;
+  gap: 15px;
 
-    .feed-article-image {
-        width: 120px;
-        height: 90px;
-    }
-    .feed-article-info-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .feed-article-image {
+    width: 120px;
+    height: 90px;
+  }
+  .feed-article-info-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .feed-single-article3 {
-    width: 170px;
+  width: 170px;
 }
 
 .feed-article-image {
-    width: inherit;
-    height: 128px;
-    object-fit: cover;
-    margin-bottom: 6px;
+  width: inherit;
+  height: 128px;
+  object-fit: cover;
+  margin-bottom: 6px;
 }
 
 .feed-container {
-    @include FlexSpaceBetween();
-    align-self: center;
-    width: 940px;
+  @include FlexSpaceBetween();
+  align-self: center;
+  width: 940px;
 }
 
 .feed-read-all {
-    color: $color-category-1;
-    font-family: $font-primary;
+  color: $color-category-1;
+  font-family: $font-primary;
 
-    &:hover {
-        color: darken($color-category-1, 15);
-        text-decoration: underline;
-    }
+  &:hover {
+    color: darken($color-category-1, 15);
+    text-decoration: underline;
+  }
 }
 
 .feed-header {
-    @include FlexSpaceBetween();
+  @include FlexSpaceBetween();
 }
 
 .feed-article-title {
-    color: $color-font-feed-title;
-    font-family: $font-secondary;
-    font-size: 14px;
-    
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+  color: $color-font-feed-title;
+  font-family: $font-secondary;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
 .big-article-image {
-    width: 260px;
-    height: 150px;
+  width: 260px;
+  height: 150px;
 }
 
 .big-article {
-    width: 260px;
+  width: 260px;
 }

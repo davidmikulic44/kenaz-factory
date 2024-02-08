@@ -1,23 +1,23 @@
 .news-double {
-    @include CarouselArrows($color-category-5);
+  @include CarouselArrows($color-category-5);
 }
 
 .news-single {
-    @include CarouselArrows($color-category-6);
+  @include CarouselArrows($color-category-6);
 }
 
 .news-single.splide__arrow--prev {
-    left: 70%;
+  left: 70%;
 }
 
 .news-single.splide__arrow--next {
-    left: 95%;
+  left: 95%;
 }
 
 .news-double.splide__arrow--prev {
-    left: 84%;
+  left: 84%;
 }
 
 .news-double.splide__arrow--next {
-    left: 95%;
+  left: 95%;
 }

@@ -1,88 +1,88 @@
 @mixin ImageGradient($color1, $color2) {
-    display:inline-block;
-    background: linear-gradient(0deg, $color1 17%, $color2 100%);
+  display: inline-block;
+  background: linear-gradient(0deg, $color1 17%, $color2 100%);
 }
 
 @mixin CategoryAnimation($color) {
-    border-bottom: 4px solid $color;
-    background-image: linear-gradient(to top, $color 50%, transparent 50%);
-    background-position: 0 0;
-    background-size: 200% 200%;
+  border-bottom: 4px solid $color;
+  background-image: linear-gradient(to top, $color 50%, transparent 50%);
+  background-position: 0 0;
+  background-size: 200% 200%;
 
-    &.active, &:hover:not(.active){
-        background-position: 0 100%;
-    }
+  &.active,
+  &:hover:not(.active) {
+    background-position: 0 100%;
+  }
 }
 
 @mixin CategoryFeed($color, $width) {
-    border-left: 10px solid $color;
-    width: $width;
-    height: 325px;
-    background-color: $color-font-primary;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-top: 25px;
-    padding-bottom: 28px;
-    .feed-title {
-        color: $color-font-feed-title;
-        font-family: $font-secondary;
-        font-size: 24px;
-        text-transform: capitalize;
-    }
+  border-left: 10px solid $color;
+  width: $width;
+  height: 325px;
+  background-color: $color-font-primary;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  .feed-title {
+    color: $color-font-feed-title;
+    font-family: $font-secondary;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
 }
 
 @mixin CarouselArrows($color) {
-    position: absolute;
-    background: none;
-    z-index: 10;
-    cursor: pointer;
-    align-self: right;
-    outline: none;
-    border: none;
-    bottom: 92%;
-    fill: $color;
-    &:hover {
-        fill: darken($color, 15);
-    }
+  position: absolute;
+  background: none;
+  z-index: 10;
+  cursor: pointer;
+  align-self: right;
+  outline: none;
+  border: none;
+  bottom: 92%;
+  fill: $color;
+  &:hover {
+    fill: darken($color, 15);
+  }
 }
 
 @mixin FeedArticles() {
-    display: flex;
-    gap: 15px;
-    overflow: hidden;
-    margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
 @mixin FlexCenter() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin FlexCenterColumn() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 @mixin FlexCenterVertical() {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin FlexCenterHorizontal() {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @mixin FlexSpaceBetween() {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin FlexColumn() {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }

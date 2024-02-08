@@ -1,7 +1,7 @@
 .sidebar-banners {
-    @include FlexCenter();
-    gap: 10px;
-    width: 300px;
-    height: 165px;
-    background-color: $color-social-background;
+  @include FlexCenter();
+  gap: 10px;
+  width: 300px;
+  height: 165px;
+  background-color: $color-social-background;
 }

@@ -1,82 +1,79 @@
-@import '../../../styles/base/colors';
-@import '../../../styles/base/typography';
-@import '../../../styles/base/mixins';
+@import "../../../styles/base/colors";
+@import "../../../styles/base/typography";
+@import "../../../styles/base/mixins";
 
 .header-container-big {
-    width: 100%;
-    height: 53px;
-    @include FlexCenterHorizontal();
+  width: 100%;
+  height: 53px;
+  @include FlexCenterHorizontal();
 }
 
 .header-container {
-    width: 940px;
-    height: 53px;
-    @include FlexCenterVertical();
-    @include FlexSpaceBetween();
+  width: 940px;
+  height: 53px;
+  @include FlexCenterVertical();
+  @include FlexSpaceBetween();
 }
 
 #headerTitle {
-    font-size: 24px;
-    font-family: $font-secondary;
-    color: $color-font-primary;
-    text-decoration: none;
+  font-size: 24px;
+  font-family: $font-secondary;
+  color: $color-font-primary;
+  text-decoration: none;
 }
 
 #logo {
-    width: 14px;
-    height: 21px;
-    flex-shrink: 0;
+  width: 14px;
+  height: 21px;
+  flex-shrink: 0;
 }
 
 .logo-container {
-    width: 63px;
-    height: 53px;
-    @include FlexCenter();
-    background-color: $color-background;
+  width: 63px;
+  height: 53px;
+  @include FlexCenter();
+  background-color: $color-background;
 }
-
-
 
 .primary {
-    background-color: $color-header;
+  background-color: $color-header;
 }
 
-
 .logo-section {
-    @include FlexCenterVertical();
-    gap: 10px;
+  @include FlexCenterVertical();
+  gap: 10px;
 }
 
 .navigation-section {
-    @include FlexCenterVertical();
-    height: 53px;
+  @include FlexCenterVertical();
+  height: 53px;
 }
 
 .main-navigation {
-    @include FlexCenterVertical();
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  @include FlexCenterVertical();
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav-item {
-    padding: 10px;
-    font-family: $font-primary;
-    color: $color-font-primary;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
+  padding: 10px;
+  font-family: $font-primary;
+  color: $color-font-primary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
 }
 
 .main-nav-link {
-    text-decoration: none;
-    color: $color-font-primary;
-    &:hover {
-        text-decoration: underline;
-    }
+  text-decoration: none;
+  color: $color-font-primary;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #searchIcon {
-    width: 16px;
+  width: 16px;
 }

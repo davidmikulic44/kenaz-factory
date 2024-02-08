@@ -1,23 +1,22 @@
-@import '../../../styles/base/colors';
-@import '../../../styles/base/typography';
+@import "../../../styles/base/colors";
+@import "../../../styles/base/typography";
 
 .category-feed-container {
-    display: flex;
-    flex-direction: column;
-    width: 620px;
-    background-color: $color-font-primary;
-    
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  background-color: $color-font-primary;
 }
 
 .category-title-container {
-    height: 60px;
-    padding: 40px;
+  height: 60px;
+  padding: 40px;
 }
 
 .category-title {
-    font-family: $font-secondary;
-    font-size: 24px;
-    width: 496px;
-    display: flex;
-    color: $color-article-title;
+  font-family: $font-secondary;
+  font-size: 24px;
+  width: 496px;
+  display: flex;
+  color: $color-article-title;
 }

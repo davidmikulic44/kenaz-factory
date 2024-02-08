@@ -1,88 +1,92 @@
-@import '../../../styles/base/colors';
+@import "../../../styles/base/colors";
 
-.image-carousel{
-    margin-top: 17px;
+.image-carousel {
+  margin-top: 17px;
+  width: 940px;
+  height: 400px;
+  overflow: visible;
+  position: relative;
+  .image-carousel-search-icon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .image-carousel-image {
     width: 940px;
     height: 400px;
-    overflow: visible;
-    position: relative;
-    .image-carousel-search-icon {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-        z-index: 10000;
+    background-size: cover;
+    background-position: center;
+
+    object-fit: cover;
+    img {
+      width: inherit;
+      height: inherit;
+      top: 0;
     }
-    
-    .image-carousel-image {
-      width: 940px;
-      height: 400px;
-      background-size: cover;
-      background-position: center;
-      
-      object-fit: cover;
-        img {
-            width: inherit;
-            height: inherit;
-            top: 0;
-        }
-    }
+  }
 }
 
 .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 100;
-    img {
-        transform: scale(1.3);
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  img {
+    transform: scale(1.3);
   }
-  
-  .modal-content {
-    transform: translate(-50%, -50%);
-  }
+}
+
+.modal-content {
+  transform: translate(-50%, -50%);
+}
 
 .thumbnail-image {
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    object-fit: cover;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  object-fit: cover;
 }
 
 .thumbnail-carousel {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .splide-thumbnail {
-    position: relative;
-    display: flex;
-    gap: 20px;
-    bottom: 200px;
-    left: 20px;
-    
-    img {
-        object-fit: cover;
-    }
+  position: relative;
+  display: flex;
+  gap: 20px;
+  bottom: 200px;
+  left: 20px;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .image-carousel-thumbnails {
-    ul {
-        gap: 10px;
-    }
+  ul {
+    gap: 10px;
+  }
 }
 
 .image-carousel-image-container {
-    background: linear-gradient(0deg, rgb(0, 0, 0) 17%, rgba(255, 255, 255, 0) 100%);
-    height: 400px;
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0) 17%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 400px;
 }

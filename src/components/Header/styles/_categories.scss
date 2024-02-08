@@ -1,49 +1,54 @@
-@import '../../../styles/base/colors';
-@import '../../../styles/base/typography';
-@import '../../../styles/base/mixins';
+@import "../../../styles/base/colors";
+@import "../../../styles/base/typography";
+@import "../../../styles/base/mixins";
 
 .secondary {
-    background-color: $color-header-secondary;
+  background-color: $color-header-secondary;
 }
 
 .category-nav-item {
-    font-family: $font-secondary;
-    font-size: 18px;
-    padding: 15px 21px 16px 21px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $color-font-primary;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    height: 53px;
-    cursor: pointer;
+  font-family: $font-secondary;
+  font-size: 18px;
+  padding: 15px 21px 16px 21px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color-font-primary;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 53px;
+  cursor: pointer;
 }
 
-#news, #business, #sport, #life, #tech, #travel{
-    transition: all ease-in-out 0.2s;
+#news,
+#business,
+#sport,
+#life,
+#tech,
+#travel {
+  transition: all ease-in-out 0.2s;
 }
 
 #news {
-    @include CategoryAnimation($color-category-1);
+  @include CategoryAnimation($color-category-1);
 }
 
 #business {
-    @include CategoryAnimation($color-category-2);
+  @include CategoryAnimation($color-category-2);
 }
 
 #sport {
-    @include CategoryAnimation($color-category-3);
+  @include CategoryAnimation($color-category-3);
 }
 
 #life {
-    @include CategoryAnimation($color-category-4);
+  @include CategoryAnimation($color-category-4);
 }
 
 #tech {
-    @include CategoryAnimation($color-category-5);
+  @include CategoryAnimation($color-category-5);
 }
 
 #travel {
-    @include CategoryAnimation($color-category-6);
+  @include CategoryAnimation($color-category-6);
 }

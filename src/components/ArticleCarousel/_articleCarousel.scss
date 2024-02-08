@@ -1,85 +1,84 @@
-@import '../../styles/base/colors';
-@import '../../styles/base/typography';
-@import '../../styles/base/mixins';
-
+@import "../../styles/base/colors";
+@import "../../styles/base/typography";
+@import "../../styles/base/mixins";
 
 .carousel {
-    margin-top: 18px;
-    width: 940px;
-    height: 425px;
-    overflow: hidden;
+  margin-top: 18px;
+  width: 940px;
+  height: 425px;
+  overflow: hidden;
 }
 
 .carousel-img {
-    display: block;
-    width: 940px;
-    z-index: -1;
-    position:relative;
+  display: block;
+  width: 940px;
+  z-index: -1;
+  position: relative;
 }
 
 .img-container {
-    @include ImageGradient(rgba(0,0,0,1),rgba(255,255,255,0));
+  @include ImageGradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
 }
 
 .splide__arrow {
-    background: none;
-    opacity: 1;
-    border-radius: 0%;
-    top: 212px;
+  background: none;
+  opacity: 1;
+  border-radius: 0%;
+  top: 212px;
+  height: 53px;
+  width: 36px;
+
+  svg {
     height: 53px;
     width: 36px;
-
-    svg {
-        height: 53px;
-        width: 36px;
-        fill: $color-font-primary;
-    }
+    fill: $color-font-primary;
+  }
 }
 
 .slide-info {
-    position: absolute;
-    color: $color-font-primary;
-    top: 241px;
-    padding-top: 5px;
-    padding-left: 30px;
-    width: 588px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  position: absolute;
+  color: $color-font-primary;
+  top: 241px;
+  padding-top: 5px;
+  padding-left: 30px;
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .slide-title {
-    font-family: $font-secondary;
-    text-wrap: wrap;
-    font-size: 34px;
+  font-family: $font-secondary;
+  text-wrap: wrap;
+  font-size: 34px;
 }
 
 .slide-detail {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .slide-detail-text {
-    font-family: $font-primary;
-    font-size: 12px;
-    font-weight: 400; 
+  font-family: $font-primary;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .button-read-article {
-    width: 120px;
-    height: 30px;
-    font-family: $font-primary;
-    background: none;
-    color: $color-font-primary;
-    border: 1px solid $color-font-primary;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.1s;
+  width: 120px;
+  height: 30px;
+  font-family: $font-primary;
+  background: none;
+  color: $color-font-primary;
+  border: 1px solid $color-font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.1s;
 
-    &:hover {
-        text-decoration: underline;
-        scale: 1.05;
-    }
+  &:hover {
+    text-decoration: underline;
+    scale: 1.05;
+  }
 }

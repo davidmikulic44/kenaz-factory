@@ -1,72 +1,70 @@
-@import '../../../styles/base/colors';
-@import '../../../styles/base/typography';
-@import '../../../styles/base/mixins';
-@import 'newsletter';
-@import 'socialLinks';
-@import 'tagsWidget';
-@import 'twitterFeed';
-@import 'posts';
+@import "../../../styles/base/colors";
+@import "../../../styles/base/typography";
+@import "../../../styles/base/mixins";
+@import "newsletter";
+@import "socialLinks";
+@import "tagsWidget";
+@import "twitterFeed";
+@import "posts";
 
 .footer-container-big {
-    @include FlexCenter();
-    @include FlexColumn();
-    width: 100%;
-    background-color: $color-header;
-    border-top: 23px solid $color-header-secondary;
-    margin-top: 20px;
-    
+  @include FlexCenter();
+  @include FlexColumn();
+  width: 100%;
+  background-color: $color-header;
+  border-top: 23px solid $color-header-secondary;
+  margin-top: 20px;
 }
 
 .footer-primary {
-    width: 940px;
-    @include FlexCenter();
-    @include FlexColumn();
-    gap: 17px;
-    padding-top: 50px;
-    padding-bottom: 222px;
+  width: 940px;
+  @include FlexCenter();
+  @include FlexColumn();
+  gap: 17px;
+  padding-top: 50px;
+  padding-bottom: 222px;
 }
 
 .footer-row1 {
-    display: flex;
-    gap: 17px;
-    margin-bottom: 64px;
+  display: flex;
+  gap: 17px;
+  margin-bottom: 64px;
 }
 
 .footer-row2 {
-    display: flex;
-    gap: 20px;
-    
+  display: flex;
+  gap: 20px;
 }
 
 .footer-text {
-    font-family: $font-secondary;
-    color: $color-font-footer;
+  font-family: $font-secondary;
+  color: $color-font-footer;
 }
 
 .footer-title-dim {
-    font-family: $font-secondary;
-    color: $color-title-footer;
-    margin-bottom: 14px;
+  font-family: $font-secondary;
+  color: $color-title-footer;
+  margin-bottom: 14px;
 }
 
 .footer-section-container {
-    @include FlexColumn();
-    width: 302px;
-    gap: 23px;    
+  @include FlexColumn();
+  width: 302px;
+  gap: 23px;
 }
 
 .footer-secondary {
-    @include FlexSpaceBetween();
-    width: 940px;
-    align-self: center;
-    margin-bottom: 222px;
-    margin-top: 22px;
+  @include FlexSpaceBetween();
+  width: 940px;
+  align-self: center;
+  margin-bottom: 222px;
+  margin-top: 22px;
 }
 
 .footer-info {
-    color: $color-placeholder-text;
-    font-family: $font-primary;
-    text-decoration: none;
-    font-weight: 400; 
-    font-size: 12px;
+  color: $color-placeholder-text;
+  font-family: $font-primary;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
 }

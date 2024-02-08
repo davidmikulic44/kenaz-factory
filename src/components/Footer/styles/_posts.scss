@@ -1,42 +1,42 @@
 .footer-posts-title {
-    font-family: $font-secondary;
-    font-size: 24px;
-    color: $color-font-primary;
+  font-family: $font-secondary;
+  font-size: 24px;
+  color: $color-font-primary;
 }
 
 .footer-post-image {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border: 2px solid $color-font-primary;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid $color-font-primary;
 }
 
 .footer-single-post {
-    @include FlexSpaceBetween();
-    margin-top: 25px;
-    gap: 30px;
-    height: 94px;
-    border-bottom: 1px solid darken($color-font-footer, 20);
+  @include FlexSpaceBetween();
+  margin-top: 25px;
+  gap: 30px;
+  height: 94px;
+  border-bottom: 1px solid darken($color-font-footer, 20);
 }
 
 .footer-post-info {
-    font-family: $font-primary;
-    font-weight: 400;
-    color: $color-font-footer;
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-font-footer;
 }
 
 .footer-post-desc {
-    @include FlexColumn();
-    width: 200px;
-    gap: 5px;
+  @include FlexColumn();
+  width: 200px;
+  gap: 5px;
 }
 
 .footer-post-header {
-    @include FlexSpaceBetween();
-    width: 99%;
+  @include FlexSpaceBetween();
+  width: 99%;
 }
 
 .footer-post-title {
-    font-family: $font-secondary;
-    color: $color-title-footer;
+  font-family: $font-secondary;
+  color: $color-title-footer;
 }

@@ -1,25 +1,25 @@
 .footer-tweets {
-    @include FlexColumn();
-    gap: 40px;
+  @include FlexColumn();
+  gap: 40px;
 }
 
 .tweet-header {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .tweet-author {
-    font-family: $font-secondary;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    color: $color-font-footer;
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-font-footer;
 }
 
 .tweet-content {
-    color: $color-title-footer;
-    font-family: $font-primary;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
+  color: $color-title-footer;
+  font-family: $font-primary;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
 }

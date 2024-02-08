@@ -1,28 +1,28 @@
 .page-boxes {
-    display: flex;
-    padding: 40px;
-    gap: 5px;
+  display: flex;
+  padding: 40px;
+  gap: 5px;
 }
 
 .page-box {
-    height: 31px;
-    width: 31px;
-    background-color: $color-social-background;
-    @include FlexCenter();
-    color: $color-header-secondary;
-    font-family: $font-primary;
-    font-size: 14px;
-    font-weight: 400;
-    &:hover {
-        cursor: pointer;
-        background-color: darken($color-social-background, 5);
-    }
+  height: 31px;
+  width: 31px;
+  background-color: $color-social-background;
+  @include FlexCenter();
+  color: $color-header-secondary;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color-social-background, 5);
+  }
 }
 
 .selected-page {
+  background-color: $color-header-secondary;
+  color: $color-font-primary;
+  &:hover {
     background-color: $color-header-secondary;
-    color: $color-font-primary;
-    &:hover {
-        background-color: $color-header-secondary;
-    }
+  }
 }

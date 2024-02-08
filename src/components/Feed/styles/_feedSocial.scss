@@ -1,43 +1,42 @@
 .social-container {
-    gap: 10px;
-    @include FlexColumn();
+  gap: 10px;
+  @include FlexColumn();
 }
 
 .social-network {
-    @include FlexCenterVertical();
-    cursor: pointer;
-    height: 40px;
+  @include FlexCenterVertical();
+  cursor: pointer;
+  height: 40px;
 }
 
 .social-heading {
-    font-size: 24px;
-    color: $color-font-feed-title;
-    font-family: $font-secondary;
-    margin-bottom: 5px;
-    
+  font-size: 24px;
+  color: $color-font-feed-title;
+  font-family: $font-secondary;
+  margin-bottom: 5px;
 }
 
 .social-action {
-    @include FlexCenterVertical();
-    width: 120px;
-    height: 40px;
-    background-color: $color-social-background;
-    padding-left: 14px;
-    color: $color-font-feed-title;
-    font-family: $font-secondary;
-    font-weight: 700;
-    font-size: 18px;
+  @include FlexCenterVertical();
+  width: 120px;
+  height: 40px;
+  background-color: $color-social-background;
+  padding-left: 14px;
+  color: $color-font-feed-title;
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .social-fans-number {
-    @include FlexCenterVertical();
-    width: 141px;
-    height: 100%;
-    color: $color-font-primary;
-    font-size: 14px;
-    font-family: $font-primary;
-    font-weight: 400;
-    padding-left: 10px;
-    background-color: $color-header-secondary;
-    line-height: normal;
+  @include FlexCenterVertical();
+  width: 141px;
+  height: 100%;
+  color: $color-font-primary;
+  font-size: 14px;
+  font-family: $font-primary;
+  font-weight: 400;
+  padding-left: 10px;
+  background-color: $color-header-secondary;
+  line-height: normal;
 }
