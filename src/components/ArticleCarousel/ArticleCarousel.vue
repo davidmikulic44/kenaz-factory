@@ -1,7 +1,7 @@
 <script setup>
 import "@splidejs/vue-splide/css";
 import "./_articleCarousel.scss";
-import ArticleCarouselSlide from "./ArticleCarouselSlide.vue";
+import ArticleCarouselSingleSlide from "./ArticleCarouselSingleSlide.vue";
 const splideOptions = {
   rewind: true,
   pagination: false,
@@ -14,24 +14,24 @@ const splideOptions = {
 <template>
   <div class="carousel">
     <Splide :options="splideOptions">
-      <ArticleCarouselSlide
+      <ArticleCarouselSingleSlide
         date="January 18, 2024"
         comments="22 comments"
         title="Margot' breathlessly reimagines Anne Frank's sister"
         image="/src/assets/planine-u-sloveniji-scaled.jpg"
-      ></ArticleCarouselSlide>
-      <ArticleCarouselSlide
+      ></ArticleCarouselSingleSlide>
+      <ArticleCarouselSingleSlide
         date="January 18, 2024"
         comments="22 comments"
         title="Margot' breathlessly reimagines Anne Frank's sister"
         image="/src/assets/planine-u-sloveniji-scaled.jpg"
-      ></ArticleCarouselSlide>
-      <ArticleCarouselSlide
+      ></ArticleCarouselSingleSlide>
+      <ArticleCarouselSingleSlide
         date="January 18, 2024"
         comments="22 comments"
         title="Margot' breathlessly reimagines Anne Frank's sister"
         image="/src/assets/planine-u-sloveniji-scaled.jpg"
-      ></ArticleCarouselSlide>
+      ></ArticleCarouselSingleSlide>
     </Splide>
   </div>
 </template>
